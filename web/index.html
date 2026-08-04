@@ -15,12 +15,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="icon" href="assets/logo.png" type="image/png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg sticky-top eg-navbar">
+<div class="sticky-top eg-navbar-wrap">
+<nav class="navbar navbar-expand-lg eg-navbar">
   <div class="container">
     <a class="navbar-brand eg-brand" href="#top">
       <img src="assets/logo.png" alt="Essence Gallery" class="eg-logo">
@@ -29,19 +30,37 @@
         <span class="eg-brand-sub">Perfumería fina</span>
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#egNav" aria-controls="egNav" aria-expanded="false" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="d-flex align-items-center eg-nav-actions">
+      <button class="eg-search-toggle" type="button" id="searchToggleBtn" aria-expanded="false" aria-controls="navSearchBar" aria-label="Buscar">
+        <i class="bi bi-search"></i>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#egNav" aria-controls="egNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
     <div class="collapse navbar-collapse" id="egNav">
       <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#hombre">Hombre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mujer">Mujer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#catalogo" data-nav-gender="all">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#catalogo" data-nav-gender="Hombre">Hombre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#catalogo" data-nav-gender="Mujer">Mujer</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<div class="eg-navsearch" id="navSearchBar">
+  <div class="container">
+    <div class="eg-search">
+      <i class="bi bi-search"></i>
+      <input type="text" id="searchInput" class="form-control" placeholder="Buscar fragancia...">
+      <button type="button" class="eg-search-close" id="searchCloseBtn" aria-label="Cerrar búsqueda">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
 
 <!-- ===== HERO ===== -->
 <header id="top" class="eg-hero">
@@ -63,29 +82,23 @@
     <div class="eg-divider"><span></span><i class="bi bi-gem"></i><span></span></div>
   </div>
 
-  <!-- Controles: búsqueda y filtros -->
-  <div class="eg-controls mb-4">
-    <div class="row g-3 align-items-center">
-      <div class="col-12 col-lg-4">
-        <div class="eg-search">
-          <i class="bi bi-search"></i>
-          <input type="text" id="searchInput" class="form-control" placeholder="Buscar fragancia...">
-        </div>
-      </div>
-      <div class="col-12 col-lg-8">
-        <div class="d-flex flex-wrap justify-content-lg-end justify-content-center gap-2">
-          <div class="btn-group eg-filter-group" role="group" aria-label="Filtro por género" id="genderFilter">
-            <button type="button" class="btn eg-filter-btn active" data-gender="all">Todos</button>
-            <button type="button" class="btn eg-filter-btn" data-gender="Hombre">Hombre</button>
-            <button type="button" class="btn eg-filter-btn" data-gender="Mujer">Mujer</button>
-          </div>
-          <div class="btn-group eg-filter-group" role="group" aria-label="Filtro por línea" id="lineFilter">
-            <button type="button" class="btn eg-filter-btn active" data-line="all">Todas las líneas</button>
-            <button type="button" class="btn eg-filter-btn" data-line="Arabes">Árabes</button>
-            <button type="button" class="btn eg-filter-btn" data-line="Disenador">Diseñador</button>
-          </div>
-        </div>
-      </div>
+  <!-- Filtro por género -->
+  <div class="eg-filter-row mb-3">
+    <span class="eg-filter-label">Género</span>
+    <div class="btn-group eg-filter-group" role="group" aria-label="Filtro por género" id="genderFilter">
+      <button type="button" class="btn eg-filter-btn active" data-gender="all">Todos</button>
+      <button type="button" class="btn eg-filter-btn" data-gender="Hombre">Hombre</button>
+      <button type="button" class="btn eg-filter-btn" data-gender="Mujer">Mujer</button>
+    </div>
+  </div>
+
+  <!-- Filtro por línea -->
+  <div class="eg-filter-row mb-4">
+    <span class="eg-filter-label">Línea</span>
+    <div class="btn-group eg-filter-group" role="group" aria-label="Filtro por línea" id="lineFilter">
+      <button type="button" class="btn eg-filter-btn active" data-line="all">Todas las líneas</button>
+      <button type="button" class="btn eg-filter-btn" data-line="Arabes">Árabes</button>
+      <button type="button" class="btn eg-filter-btn" data-line="Disenador">Diseñador</button>
     </div>
   </div>
 
@@ -111,8 +124,8 @@
     <h2 class="eg-section-title text-white">¿Interesado en alguna fragancia?</h2>
     <p class="eg-contact-sub">Contáctanos para conocer disponibilidad y precios.</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
-      <a href="#" class="btn eg-btn-gold"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-      <a href="#" class="btn eg-btn-outline-light"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="https://wa.me/525520823989?text=Hola%20buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20mas%20informaci%C3%B3n%20sobre%20las%20fragancias" target="_blank" rel="noopener" class="btn eg-btn-gold"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/essence_galery_?igsh=eGZvaWM0M241bWRl&utm_source=qr" target="_blank" rel="noopener" class="btn eg-btn-outline-light"><i class="bi bi-instagram"></i> Instagram</a>
     </div>
   </div>
 </section>
@@ -134,14 +147,15 @@
       <div class="modal-body text-center pt-0">
         <img id="modalImage" src="" alt="" class="eg-modal-img mb-3">
         <h3 id="modalName" class="eg-section-title"></h3>
-        <p id="modalMeta" class="eg-ink-soft"></p>
+        <p id="modalMeta" class="eg-ink-soft mb-3"></p>
+        <div id="modalNotes" class="eg-notes text-start"></div>
       </div>
     </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/products.js"></script>
-<script src="js/app.js"></script>
+<script src="js/products.js?v=6"></script>
+<script src="js/app.js?v=5"></script>
 </body>
 </html>

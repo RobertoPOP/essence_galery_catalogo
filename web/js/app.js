@@ -42,7 +42,7 @@
   }
 
   function cardTemplate(p) {
-    const price = formatPrice(p.priceMenudeo);
+    const price = formatPrice(p.priceConsumidor);
     const priceHtml = price
       ? `<div class="eg-card-price">${price}</div>`
       : `<div class="eg-card-price eg-card-price-na">Consultar precio</div>`;
@@ -94,17 +94,25 @@
     parts.push(lineLabels[p.line] || p.line);
     let metaHtml = parts.join(' · ');
 
-    if (p.priceMenudeo) {
-      metaHtml += `<br><span class="eg-modal-price">${formatPrice(p.priceMenudeo)} <small>menudeo</small></span>`;
-    }
-    if (p.priceMayoreo) {
-      metaHtml += ` &nbsp;/&nbsp; <span class="eg-modal-price-mayoreo">${formatPrice(p.priceMayoreo)} <small>mayoreo</small></span>`;
-    }
-    if (!p.priceMenudeo && !p.priceMayoreo) {
+    if (p.priceConsumidor) {
+      metaHtml += `<br><span class="eg-modal-price">${formatPrice(p.priceConsumidor)}</span>`;
+    } else {
       metaHtml += '<br>Consultar precio';
     }
 
     document.getElementById('modalMeta').innerHTML = metaHtml;
+
+    const notesEl = document.getElementById('modalNotes');
+    if (p.notes) {
+      notesEl.innerHTML = `
+        <div class="eg-notes-title">Notas olfativas</div>
+        <p class="eg-notes-text">${p.notes}</p>
+      `;
+      notesEl.style.display = 'block';
+    } else {
+      notesEl.innerHTML = '';
+      notesEl.style.display = 'none';
+    }
 
     const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('productModal'));
     modal.show();
@@ -130,6 +138,23 @@
     render();
   });
 
+  document.querySelectorAll('[data-nav-gender]').forEach(link => {
+    link.addEventListener('click', () => {
+      const gender = link.dataset.navGender;
+      state.gender = gender;
+      state.visibleCount = PAGE_SIZE;
+      document.querySelectorAll('#genderFilter .eg-filter-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.gender === gender);
+      });
+      render();
+
+      const navEl = document.getElementById('egNav');
+      if (navEl.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navEl).hide();
+      }
+    });
+  });
+
   let searchTimer;
   searchInput.addEventListener('input', e => {
     clearTimeout(searchTimer);
@@ -143,6 +168,39 @@
   loadMoreBtn.addEventListener('click', () => {
     state.visibleCount += PAGE_SIZE;
     render();
+  });
+
+  const searchToggleBtn = document.getElementById('searchToggleBtn');
+  const navSearchBar = document.getElementById('navSearchBar');
+  const searchCloseBtn = document.getElementById('searchCloseBtn');
+
+  function openNavSearch() {
+    navSearchBar.classList.add('show');
+    searchToggleBtn.classList.add('active');
+    searchToggleBtn.setAttribute('aria-expanded', 'true');
+    setTimeout(() => searchInput.focus(), 300);
+  }
+
+  function closeNavSearch() {
+    navSearchBar.classList.remove('show');
+    searchToggleBtn.classList.remove('active');
+    searchToggleBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  searchToggleBtn.addEventListener('click', () => {
+    if (navSearchBar.classList.contains('show')) {
+      closeNavSearch();
+    } else {
+      openNavSearch();
+    }
+  });
+
+  searchCloseBtn.addEventListener('click', closeNavSearch);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && navSearchBar.classList.contains('show')) {
+      closeNavSearch();
+    }
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
