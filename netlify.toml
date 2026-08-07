@@ -1,5 +1,7 @@
 [build]
-  publish = "web"
+  base = "scripts"
+  command = "npm install && node build-products.js"
+  publish = "../web"
 
 [[headers]]
   for = "/*.html"

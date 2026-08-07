@@ -41,11 +41,33 @@
     });
   }
 
-  function cardTemplate(p) {
+  function getDiscount(p) {
+    if (!p.priceConsumidor || !p.priceOriginal || p.priceOriginal <= p.priceConsumidor) return null;
+    const percent = Math.round((1 - p.priceConsumidor / p.priceOriginal) * 100);
+    if (percent <= 0) return null;
+    return percent;
+  }
+
+  function cardPriceHtml(p) {
     const price = formatPrice(p.priceConsumidor);
-    const priceHtml = price
-      ? `<div class="eg-card-price">${price}</div>`
-      : `<div class="eg-card-price eg-card-price-na">Consultar precio</div>`;
+    if (!price) {
+      return `<div class="eg-card-price eg-card-price-na">Consultar precio</div>`;
+    }
+    const discount = getDiscount(p);
+    if (discount) {
+      return `
+        <div class="eg-price-row">
+          <div class="eg-card-price">${price}</div>
+          <span class="eg-discount-badge">-${discount}%</span>
+        </div>
+        <div class="eg-card-price-original">${formatPrice(p.priceOriginal)}</div>
+      `;
+    }
+    return `<div class="eg-card-price">${price}</div>`;
+  }
+
+  function cardTemplate(p) {
+    const priceHtml = cardPriceHtml(p);
 
     return `
       <div class="col-6 col-md-4 col-lg-3">
@@ -95,7 +117,14 @@
     let metaHtml = parts.join(' · ');
 
     if (p.priceConsumidor) {
-      metaHtml += `<br><span class="eg-modal-price">${formatPrice(p.priceConsumidor)}</span>`;
+      const discount = getDiscount(p);
+      if (discount) {
+        metaHtml += `<br><span class="eg-modal-discount-badge">-${discount}%</span> `
+          + `<span class="eg-modal-price">${formatPrice(p.priceConsumidor)}</span> `
+          + `<span class="eg-modal-price-original">${formatPrice(p.priceOriginal)}</span>`;
+      } else {
+        metaHtml += `<br><span class="eg-modal-price">${formatPrice(p.priceConsumidor)}</span>`;
+      }
     } else {
       metaHtml += '<br>Consultar precio';
     }

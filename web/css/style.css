@@ -9,6 +9,8 @@
   --eg-ink-soft: #6B5D4B;
   --eg-white: #FFFFFF;
   --eg-shadow: 0 10px 30px rgba(60, 44, 20, 0.12);
+  --eg-sale: #9C3B4A;
+  --eg-sale-light: #F6E4E6;
 }
 
 * { box-sizing: border-box; }
@@ -450,6 +452,37 @@ a { text-decoration: none; }
   font-family: 'Jost', sans-serif;
 }
 
+.eg-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+.eg-price-row .eg-card-price {
+  margin-top: 0;
+}
+
+.eg-discount-badge {
+  background: var(--eg-sale);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  padding: .15rem .5rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.eg-card-price-original {
+  font-size: .8rem;
+  color: var(--eg-ink-soft);
+  text-decoration: line-through;
+  text-decoration-color: var(--eg-ink-soft);
+  margin-top: -.1rem;
+}
+
 .eg-modal-price {
   font-size: 1.2rem;
   font-weight: 700;
@@ -462,6 +495,23 @@ a { text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--eg-ink-soft);
+}
+
+.eg-modal-discount-badge {
+  background: var(--eg-sale);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+.eg-modal-price-original {
+  font-size: .95rem;
+  color: var(--eg-ink-soft);
+  text-decoration: line-through;
+  vertical-align: middle;
 }
 
 .eg-notes {
