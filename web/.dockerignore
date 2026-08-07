@@ -3,5 +3,5 @@
 .dockerignore
 Dockerfile
 docker-compose.yml
-Catalogo_Perfumes_Framora.xlsx
+*.xlsx
 *.md

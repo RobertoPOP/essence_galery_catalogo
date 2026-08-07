@@ -336,6 +336,8 @@ a { text-decoration: none; }
   font-size: .85rem;
   padding: .45rem 1rem;
   letter-spacing: .3px;
+  border-radius: 20px !important;
+  margin: 2px;
 }
 .eg-filter-btn:hover {
   background: var(--eg-cream-deep);

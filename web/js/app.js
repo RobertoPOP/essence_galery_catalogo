@@ -14,7 +14,7 @@
   const loadMoreBtn = document.getElementById('loadMoreBtn');
   const searchInput = document.getElementById('searchInput');
 
-  const lineLabels = { Arabes: 'Árabe', Disenador: 'Diseñador', Nicho: 'Nicho' };
+  const lineLabels = { Arabes: 'Árabe', Disenador: 'Diseñador', Nicho: 'Nicho', Celebridad: 'Celebridad' };
 
   function formatPrice(value) {
     if (value === null || value === undefined) return null;
@@ -118,6 +118,27 @@
     modal.show();
   }
 
+  const lineVisibilityByGender = {
+    all: ['Arabes', 'Disenador', 'Nicho', 'Celebridad'],
+    Hombre: ['Arabes', 'Disenador', 'Nicho'],
+    Mujer: ['Arabes', 'Disenador', 'Celebridad'],
+  };
+
+  function updateLineFilterVisibility(gender) {
+    const visibleLines = lineVisibilityByGender[gender] || lineVisibilityByGender.all;
+    document.querySelectorAll('#lineFilter .eg-filter-btn[data-line]').forEach(btn => {
+      const line = btn.dataset.line;
+      const shouldShow = line === 'all' || visibleLines.includes(line);
+      btn.style.display = shouldShow ? '' : 'none';
+    });
+    if (state.line !== 'all' && !visibleLines.includes(state.line)) {
+      state.line = 'all';
+      document.querySelectorAll('#lineFilter .eg-filter-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.line === 'all');
+      });
+    }
+  }
+
   document.getElementById('genderFilter').addEventListener('click', e => {
     const btn = e.target.closest('.eg-filter-btn');
     if (!btn) return;
@@ -125,6 +146,7 @@
     btn.classList.add('active');
     state.gender = btn.dataset.gender;
     state.visibleCount = PAGE_SIZE;
+    updateLineFilterVisibility(state.gender);
     render();
   });
 
@@ -146,6 +168,7 @@
       document.querySelectorAll('#genderFilter .eg-filter-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.gender === gender);
       });
+      updateLineFilterVisibility(gender);
       render();
 
       const navEl = document.getElementById('egNav');
@@ -205,5 +228,6 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  updateLineFilterVisibility(state.gender);
   render();
 })();
