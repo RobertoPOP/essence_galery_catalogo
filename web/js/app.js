@@ -102,6 +102,18 @@
 
     document.getElementById('modalMeta').innerHTML = metaHtml;
 
+    const descEl = document.getElementById('modalDescription');
+    if (p.description) {
+      descEl.innerHTML = `
+        <div class="eg-notes-title">Descripción</div>
+        <p class="eg-notes-text">${p.description}</p>
+      `;
+      descEl.style.display = 'block';
+    } else {
+      descEl.innerHTML = '';
+      descEl.style.display = 'none';
+    }
+
     const notesEl = document.getElementById('modalNotes');
     if (p.notes) {
       notesEl.innerHTML = `

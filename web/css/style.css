@@ -373,7 +373,7 @@ a { text-decoration: none; }
 
 .eg-card-img-wrap {
   aspect-ratio: 1 / 1;
-  background: var(--eg-cream-soft);
+  background: var(--eg-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,9 +513,18 @@ a { text-decoration: none; }
 
 /* ===== MODAL ===== */
 .eg-modal {
-  background: var(--eg-cream);
+  background: var(--eg-white);
   border-radius: 16px;
   border: 1px solid var(--eg-cream-deep);
+}
+
+.eg-modal-img-wrap {
+  background: var(--eg-white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .eg-modal-img {
