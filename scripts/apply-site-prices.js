@@ -24,8 +24,20 @@ function normalize(s) {
     .toLowerCase()
     .replace(/&/g, ' and ')
     .replace(/[’']/g, '')
+    .replace(/club\s+the\s+nuit/g, 'club de nuit')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
+}
+
+// Quita la marca del inicio del nombre del perfume si ya viene repetida ahí
+// (ej. Marca "Halloween", Perfume "Halloween Mystery 125ml edp" -> "Mystery 125ml edp").
+function stripLeadingBrand(brand, name) {
+  const normBrand = normalize(brand);
+  const normName = normalize(name);
+  if (normBrand && normName.startsWith(normBrand + ' ')) {
+    return name.slice(brand.length).trim();
+  }
+  return name;
 }
 
 function coreName(name) {
@@ -34,6 +46,20 @@ function coreName(name) {
     .replace(/\b(edt|edp|edc|parfum|extrait|elixir)\b/g, '')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// Colapsa todos los espacios - sirve para calzar variantes como "9am" vs "9 am".
+function squash(name) {
+  return coreName(name).replace(/\s+/g, '');
+}
+
+// Combina marca + nombre sin duplicar la marca si el nombre ya la incluye
+// (ej. perfume "Bharara king 100ml edp" con marca "Bharara").
+function brandPlusName(brand, name) {
+  const normBrand = normalize(brand);
+  const normName = normalize(name);
+  if (normBrand && normName.startsWith(normBrand)) return name;
+  return brand + ' ' + name;
 }
 
 function parseMxn(str) {
@@ -62,20 +88,36 @@ function parseSiteName(raw) {
 // Mapa: coreName(marca + " " + nombre) -> precio original (numero)
 // y tambien coreName(nombre solo) como respaldo, por si la marca no calza exacto.
 const byBrandAndName = new Map();
+const bySquashFull = new Map();
 const byNameOnly = new Map();
+const siteList = []; // para el respaldo final por "contiene" (substring)
 
+let skippedOutliers = 0;
 for (const entry of siteEntries) {
   const original = parseMxn(entry.original);
   if (!original) continue; // sin precio tachado -> no aporta nada, se ignora
+  const sale = parseMxn(entry.sale);
+  // Sanity check: descuentos normales son ~10%-70%. Si "original" es más de 3x
+  // el precio de venta, probablemente es un error de captura (dígito de más, etc).
+  if (sale && original > sale * 3) {
+    skippedOutliers++;
+    continue;
+  }
   const { productName, brand } = parseSiteName(entry.name);
-  const keyFull = coreName(brand + ' ' + productName);
+  const combined = brandPlusName(brand, productName);
+  const keyFull = coreName(combined);
+  const keySquash = squash(combined);
   const keyNameOnly = coreName(productName);
+
   if (!byBrandAndName.has(keyFull)) byBrandAndName.set(keyFull, original);
+  if (!bySquashFull.has(keySquash)) bySquashFull.set(keySquash, original);
   if (!byNameOnly.has(keyNameOnly)) byNameOnly.set(keyNameOnly, []);
   byNameOnly.get(keyNameOnly).push({ brand, original });
+  siteList.push({ brand: normalize(brand), nameKey: keyNameOnly, original });
 }
 
 console.log(`[apply-site-prices] ${siteEntries.length} resultados leídos del sitio, ${byBrandAndName.size} con precio tachado único por marca+nombre.`);
+console.log(`[apply-site-prices] Outliers descartados (original > 3x el precio de venta, probable error de captura): ${skippedOutliers}`);
 
 // ---- 2. Leer el Excel y actualizar la columna Precio original ----
 const wb = XLSX.readFile(EXCEL_PATH);
@@ -84,6 +126,7 @@ let totalRows = 0;
 let matched = 0;
 let clearedNoMatch = 0;
 const unmatchedSample = [];
+const methodCounts = {};
 
 for (const sheetName of ['Hombre', 'Mujer']) {
   const sheet = wb.Sheets[sheetName];
@@ -96,21 +139,50 @@ for (const sheetName of ['Hombre', 'Mujer']) {
     const perfume = String(row['Perfume'] || '').trim();
     if (!perfume) continue;
 
-    const keyFull = coreName(marca + ' ' + perfume);
+    const combined = brandPlusName(marca, perfume);
+    const keyFull = coreName(combined);
     let found = byBrandAndName.get(keyFull);
+    let method = 'exact';
 
     if (!found) {
-      const keyNameOnly = coreName(perfume);
+      found = bySquashFull.get(squash(combined));
+      method = 'squash';
+    }
+
+    const perfumeNoBrand = stripLeadingBrand(marca, perfume);
+
+    if (!found) {
+      const keyNameOnly = coreName(perfumeNoBrand);
       const candidates = byNameOnly.get(keyNameOnly);
       if (candidates && candidates.length) {
         const brandMatch = candidates.find(c => normalize(c.brand).includes(normalize(marca)) || normalize(marca).includes(normalize(c.brand)));
         found = (brandMatch || candidates[0]).original;
+        method = 'name-only';
+      }
+    }
+
+    if (!found) {
+      // Ultimo respaldo: nombre del excel "contenido" en el nombre del sitio
+      // (o viceversa), siempre que la marca coincida. Cubre casos como
+      // "Tyrant" (excel) vs "Odyssey Tyrant" (sitio).
+      const normMarca = normalize(marca);
+      const keyNameOnly = coreName(perfumeNoBrand);
+      if (keyNameOnly.length >= 4) {
+        const candidate = siteList.find(s =>
+          (normMarca.includes(s.brand) || s.brand.includes(normMarca)) &&
+          (s.nameKey.includes(keyNameOnly) || keyNameOnly.includes(s.nameKey))
+        );
+        if (candidate) {
+          found = candidate.original;
+          method = 'substring';
+        }
       }
     }
 
     if (found) {
       row['Precio original'] = found;
       matched++;
+      methodCounts[method] = (methodCounts[method] || 0) + 1;
     } else {
       row['Precio original'] = '';
       clearedNoMatch++;
@@ -126,6 +198,7 @@ XLSX.writeFile(wb, EXCEL_PATH);
 
 console.log(`[apply-site-prices] Filas totales: ${totalRows}`);
 console.log(`[apply-site-prices] Con precio original encontrado: ${matched}`);
+console.log('[apply-site-prices] Por método:', methodCounts);
 console.log(`[apply-site-prices] Sin coincidencia (dejadas en blanco): ${clearedNoMatch}`);
 console.log('[apply-site-prices] Ejemplos sin coincidencia:');
 unmatchedSample.forEach(u => console.log('  - ' + u));
