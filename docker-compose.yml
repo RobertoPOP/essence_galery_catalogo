@@ -1,0 +1,7 @@
+services:
+  catalogo:
+    build: .
+    container_name: essence-gallery-catalogo
+    ports:
+      - "8090:80"
+    restart: unless-stopped
