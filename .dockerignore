@@ -1,7 +1,0 @@
-.git
-.claude
-.dockerignore
-Dockerfile
-docker-compose.yml
-*.xlsx
-*.md

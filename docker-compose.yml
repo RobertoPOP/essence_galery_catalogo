@@ -1,5 +1,0 @@
-services:
-  catalogo-web:
-    build: .
-    ports:
-      - "8081:80"
