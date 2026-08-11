@@ -207,46 +207,80 @@ input:focus-visible {
   color: var(--background-color);
 }
 
-.hero-visual {
+/* ===== Promo de Instagram (hero) ===== */
+.ig-promo {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  gap: 0.9rem;
   aspect-ratio: 1 / 1;
   max-width: 420px;
   margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(155deg, #f3ecdd, #ffffff);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  color: var(--text-color) !important;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
-.hero-ring {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px dashed var(--accent-color);
-  animation: spin 40s linear infinite;
-}
-
-.hero-ring::before {
-  content: "";
-  position: absolute;
-  inset: 14%;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, rgba(216, 185, 138, 0.35), transparent 70%);
-}
-
-.hero-logo {
-  position: relative;
-  width: 62%;
-  border-radius: 50%;
+.ig-promo:hover {
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
+  border-color: var(--accent-color);
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.ig-promo-icon {
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  color: #ffffff;
+  background: radial-gradient(circle at 30% 30%, #f5c34d, #e0793a 40%, #c8366b 70%, #6a4fc9 100%);
+  box-shadow: var(--shadow-soft);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-ring { animation: none; }
+.ig-promo-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ig-promo-title i {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.ig-promo-text {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: 300px;
+}
+
+.ig-promo-handle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  padding: 0.55rem 1.3rem;
+  border-radius: var(--radius-pill);
+  background: var(--secondary-color);
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 0.92rem;
 }
 
 /* ===== Section heading ===== */

@@ -1,0 +1,15 @@
+# Archivos temporales de Office (se generan al tener el Excel abierto)
+~$*.xlsx
+~$*.xls
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Netlify
+.netlify/
