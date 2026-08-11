@@ -8,7 +8,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/212 Héroes 90ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2450,
+    "pricePromo": 1890,
+    "description": "212 Heroes es una fragancia fresca y juvenil, que combina la energía de las frutas cítricas con un corazón aromático y un fondo cálido de maderas. Ideal para el hombre libre, auténtico y lleno de espíritu aventurero."
   },
   {
     "id": 2,
@@ -17,7 +19,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/212 Men 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2600,
+    "pricePromo": 1770,
+    "description": "212 Men EDT es una fragancia fresca y urbana, que mezcla notas cítricas y verdes con un corazón especiado y un fondo elegante de maderas. Ideal para el hombre moderno, dinámico y sofisticado."
   },
   {
     "id": 3,
@@ -26,7 +30,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/212 VIP BLACK ELIXIR 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2390,
+    "description": "Fragancia intensa, dulce y muy seductora. Combina notas especiadas con vainilla y un toque licoroso que la hace perfecta para la noche. Es elegante pero atrevida, ideal para destacar en fiestas o eventos."
   },
   {
     "id": 4,
@@ -35,7 +41,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/212 Vip Black 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2680,
+    "pricePromo": 1990,
+    "description": "212 VIP Black es una fragancia atrevida y seductora, con una mezcla de absenta, lavanda y vainilla oscura. Perfecta para el hombre que destaca con elegancia en cada ocasión. https://framora.com.mx/wp-admin/media-upload.php?post_id=743&type=image&TB_iframe=1"
   },
   {
     "id": 5,
@@ -44,52 +52,64 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/212 Vip Men 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2300,
+    "pricePromo": 1850,
+    "description": "212 VIP Men es una fragancia vibrante y sofisticada, que combina la frescura del caviar de lima con notas especiadas y un fondo amaderado. Ideal para el hombre carismático que sabe ser el alma de la fiesta."
   },
   {
     "id": 6,
     "name": "Acqua Di Gio",
-    "brand": "Giorgio Armani",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Acqua Di Gio 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2930,
+    "pricePromo": 1890,
+    "description": "Acqua di Giò EDT es un clásico atemporal de frescura y elegancia, inspirado en la brisa marina y la libertad. Ideal para el hombre que valora la autenticidad y la simplicidad refinada."
   },
   {
     "id": 7,
     "name": "Acqua Di Gio",
-    "brand": "Giorgio Armani",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Acqua Di Gio 125ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3690,
+    "pricePromo": 2790,
+    "description": "Acqua di Giò EDP es una fragancia fresca y elegante que captura la pureza del mar y la fuerza de la naturaleza. Perfecta para el hombre que busca equilibrio y sofisticación."
   },
   {
     "id": 8,
     "name": "Acqua Di Gio Parfum",
-    "brand": "Giorgio Armani",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Acqua Di Gio Parfum 100ml.jpg",
-    "description": ""
+    "priceOriginal": 4390,
+    "pricePromo": 2790,
+    "description": "Acqua di Giò Parfum es una interpretación profunda y sofisticada de la frescura marina, con un carácter elegante y poderoso. Para el hombre que busca dejar una impresión inolvidable."
   },
   {
     "id": 9,
     "name": "Acqua Di Gio Profondo",
-    "brand": "Giorgio Armani",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Acqua Di Gio Profondo 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3300,
+    "pricePromo": 2850,
+    "description": "Acqua di Giò Profondo es una fragancia fresca y sofisticada que evoca la intensidad del mar profundo. Perfecta para el hombre moderno que busca elegancia y fuerza en cada nota."
   },
   {
     "id": 10,
     "name": "Acqua Di Gio Profondo Parfum",
-    "brand": "Giorgio Armani",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Acqua Di Gio Profondo Parfum 100ml.jpg",
-    "description": ""
+    "priceOriginal": 4350,
+    "pricePromo": 2990,
+    "description": "Acqua di Giò Profondo Parfum es la expresión más intensa de la frescura marina, donde la profundidad del océano se encuentra con matices amaderados y minerales. Un aroma sofisticado y envolvente para el hombre que busca potencia y elegancia en cada momento."
   },
   {
     "id": 11,
@@ -98,7 +118,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Azzaro The Most Wanted Intense 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2995,
+    "pricePromo": 1790,
+    "description": "Azzaro The Most Wanted EDP Intense es una fragancia magnética y audaz, creada para el hombre que disfruta destacar. Una mezcla intensa de sensualidad y carácter que deja huella"
   },
   {
     "id": 12,
@@ -107,7 +129,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Azzaro The Most Wanted Intense 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 1990,
+    "pricePromo": 1590,
+    "description": "Azzaro The Most Wanted EDT es una fragancia vibrante y carismática, ideal para el hombre que vive cada momento con pasión. Un aroma dinámico que conquista con su frescura y energía."
   },
   {
     "id": 13,
@@ -116,7 +140,9 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Azzaro The Most Wanted Parfum 100ml.webp",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2290,
+    "description": "Azzaro The Most Wanted Parfum es una fragancia intensa y sofisticada, perfecta para el hombre que domina con elegancia. Un aroma profundo y seductor que impone presencia."
   },
   {
     "id": 14,
@@ -125,187 +151,229 @@ const perfumes = [
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Azzaro Wanted 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2950,
+    "pricePromo": 1490,
+    "description": "Azzaro Wanted EDP es una fragancia audaz y elegante, pensada para el hombre que persigue sus sueños con determinación. Un aroma intenso que irradia confianza y magnetismo."
   },
   {
     "id": 15,
-    "name": "By The Fire Place",
-    "brand": null,
+    "name": "Azzaro Wanted",
+    "brand": "Azzaro",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/BY THE FIRE PLACE 100ML EDT.jpg",
+    "image": "assets/Hombre/Disenador/Azzaro Wanted 100ml edt.webp",
+    "priceOriginal": 2170,
+    "pricePromo": 1190,
     "description": ""
   },
   {
     "id": 16,
+    "name": "By The Fire Place",
+    "brand": "Maison Margiela",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/BY THE FIRE PLACE 100ML EDT.jpg",
+    "priceOriginal": 3450,
+    "pricePromo": 2290,
+    "description": "Fragancia cálida y reconfortante que evoca el aroma de una chimenea encendida. Destacan notas de castaña, vainilla y maderas ahumadas, creando un aroma dulce, cremoso y ligeramente tostado. Ideal para clima frío y momentos acogedores donde quieres oler diferente y envolvente."
+  },
+  {
+    "id": 17,
     "name": "Bad Boy",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Bad Boy 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2550,
+    "pricePromo": 2090,
+    "description": "Bad Boy EDT es una fragancia audaz y contemporánea, donde la chispa cítrica de la bergamota y el picante de la pimienta negra se funden con un corazón de salvia y un fondo cálido de vetiver y cacao. Perfecta para el hombre atrevido que juega con la dualidad de su carácter."
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Bad Boy Cobalt",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Bad Boy Cobalt 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2940,
+    "pricePromo": 2090,
+    "description": "Bad Boy Cobalt es una fragancia fresca y magnética, donde la energía de la pimienta rosa se combina con un corazón de geranio y un fondo elegante de maderas minerales. Ideal para el hombre moderno que irradia fuerza y sofisticación."
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Bad Boy Cobalt Elixir",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Bad Boy Cobalt Elixir 100ml edp.avif",
-    "description": ""
+    "priceOriginal": 3050,
+    "pricePromo": 2290,
+    "description": "Bad Boy Cobalt Elixir es una fragancia intensa y vibrante, que combina especias chispeantes con la profundidad de las maderas y un fondo cálido de cacao. Perfecta para el hombre que busca un aroma poderoso y sofisticado."
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Bad Boy Extreme",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Bad Boy Extreme 100ml edp.jpg",
+    "priceOriginal": 3100,
+    "pricePromo": 2290,
     "description": ""
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Bad Boy Le Parfum",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Bad Boy Le Parfum 100ml edp.avif",
-    "description": ""
+    "priceOriginal": 2800,
+    "pricePromo": 2190,
+    "description": "Bad Boy Le Parfum es una fragancia intensa y sofisticada, que abre con notas chispeantes de cannabis y pomelo, evoluciona hacia un corazón picante de pimienta negra y geranio, y culmina en un fondo seductor de cuero y vetiver. Perfecta para el hombre audaz que redefine la elegancia."
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Born In Roma",
     "brand": "Valentino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Born In Roma 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 3190,
+    "pricePromo": 2390,
+    "description": "Born in Roma EDT es una fragancia moderna y vibrante, que mezcla notas frescas de violeta y salvia con un fondo cálido de vetiver y maderas ahumadas. Ideal para el hombre que celebra su autenticidad con actitud y estilo."
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Born In Roma Coral Fantasy",
     "brand": "Valentino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Born In Roma Coral Fantasy 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 3590,
+    "pricePromo": 2390,
+    "description": "Born in Roma Coral Fantasy es una fragancia fresca y enérgica, que combina notas de manzana roja, salvia aromática y un fondo cálido de tabaco y vetiver. Perfecta para el hombre que vive la vida con pasión y libertad."
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Born In Roma Extradose",
     "brand": "Valentino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Born In Roma Extradose 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 4090,
+    "pricePromo": 3390,
+    "description": "Born in Roma Extradose de Valentino una fragancia intensa y sofisticada con toques de vainilla y maderas, ideal para quienes quieren dejar huella con elegancia."
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Born In Roma Green Stravaganza",
     "brand": "Valentino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Born In Roma Green Stravaganza 100ml edt.png",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2290,
+    "description": "Born in Roma Green Stravaganza es una fragancia audaz y luminosa, que mezcla la frescura vibrante de la bergamota y la mandarina con un fondo elegante de maderas ambaradas. Ideal para el hombre que desafía lo ordinario con estilo y actitud."
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Born In Roma Intense",
     "brand": "Valentino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Born In Roma Intense 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3750,
+    "pricePromo": 3090,
+    "description": "Born in Roma Intense es una fragancia profunda y seductora, que combina la frescura de la vainilla con la intensidad del vetiver y la lavanda. Perfecta para el hombre que quiere dejar una impresión poderosa y sofisticada."
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Ch Men",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/CH MEN 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2300,
+    "pricePromo": 1790,
+    "description": "CH Men es una fragancia moderna y masculina que fusiona la frescura cítrica de la bergamota con un corazón especiado de coriandro y lavanda, asentado sobre un fondo elegante de maderas y cuero. Ideal para el hombre que busca distinción y sofisticación."
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Dior Homme",
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Dior Homme 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2915,
+    "pricePromo": 2290,
+    "description": "Dior Homme EDT es una fragancia elegante y moderna, que equilibra la frescura cítrica con un corazón suave de iris y un fondo amaderado refinado. Perfecta para el hombre sofisticado y seguro de sí mismo."
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Dior Homme Cologne",
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Dior Homme Cologne 125ml edc.jpg",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 2390,
+    "description": "Dior Homme Cologne es una fragancia fresca y minimalista, que combina la pureza de los cítricos con un fondo limpio y elegante. Perfecta para el hombre que busca una elegancia discreta y natural."
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Dior Homme Intense",
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Dior Homme Intense 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2690,
+    "description": "Dior Homme Intense es una fragancia elegante y envolvente, donde la suavidad del iris se combina con la intensidad del ámbar y las maderas. Ideal para el hombre sofisticado que busca dejar una impresión duradera."
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Dior Homme Sport",
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Dior Homme Sport 125ml edt.jpg",
-    "description": ""
+    "priceOriginal": 3390,
+    "pricePromo": 2440,
+    "description": "Dior Homme Sport es una fragancia fresca y vibrante, donde los cítricos chispeantes se mezclan con un corazón especiado y un fondo elegante de maderas. Ideal para el hombre dinámico que combina energía y sofisticación."
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Dylan Blue",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Dylan Blue 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2250,
+    "pricePromo": 1490,
+    "description": "Dylan Blue es una fragancia moderna y magnética, que mezcla notas acuáticas, cítricos frescos y un fondo amaderado profundo. Ideal para el hombre que proyecta fuerza, elegancia y carácter."
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Eros Najim",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/EROS NAJIM 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 4100,
+    "pricePromo": 1990,
+    "description": "Eros najim fragancia intensa y seductora que mezcla frescura y dulzura de forma adictiva. Destacan sus notas de menta, vainilla y manzana verde, creando un aroma poderoso y juvenil. Perfecta para la noche, citas o eventos donde quieres llamar la atención y dejar huella."
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Explorer Extreme",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/EXPLORER EXTREME 100ML EDP.jpg",
-    "description": ""
-  },
-  {
-    "id": 34,
-    "name": "Eros",
-    "brand": "Versace",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Eros 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3350,
+    "pricePromo": 2450,
+    "description": "Fragancia fresca y vibrante que transmite libertad y aventura. Abre con notas cítricas y marinas muy limpias, seguidas de un corazón aromático elegante, terminando con un fondo amaderado que aporta masculinidad y duración. Es perfecta para uso diario, especialmente en clima cálido, proyectando una imagen moderna, fresca y sofisticada."
   },
   {
     "id": 35,
@@ -313,71 +381,87 @@ const perfumes = [
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Eros 100ml edt.png",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Eros 100ml edp.jpg",
+    "priceOriginal": 3100,
+    "pricePromo": 1690,
+    "description": "Eros EDP es una fragancia poderosa y sofisticada, que combina la frescura vibrante de la menta y los cítricos con un fondo intenso de maderas ambaradas y vainilla. Ideal para el hombre que domina con elegancia y pasión"
   },
   {
     "id": 36,
+    "name": "Eros",
+    "brand": "Versace",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Eros 100ml edt.png",
+    "priceOriginal": 2540,
+    "pricePromo": 1550,
+    "description": "Eros EDT es una fragancia intensa y seductora, que mezcla menta fresca, manzana verde y vainilla cálida sobre un fondo amaderado. Perfecta para el hombre que conquista con pasión y poder."
+  },
+  {
+    "id": 37,
     "name": "Eros Energy",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Eros Energy 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3295,
+    "pricePromo": 2190,
+    "description": "Eros Energy es una fragancia fresca y vibrante, que fusiona cítricos chispeantes con menta aromática y un fondo amaderado elegante. Perfecta para el hombre que irradia vitalidad y carisma."
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Eros Flame",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Eros Flame 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2970,
+    "pricePromo": 1790,
+    "description": "Eros Flame es una fragancia apasionada y vibrante, que combina frescura cítrica con especias cálidas y un fondo amaderado profundo. Ideal para el hombre que ama con intensidad y fuerza."
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Explorer",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Explorer 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2190,
+    "pricePromo": 1320,
+    "description": "Explorer es una fragancia fresca y aventurera, que mezcla la energía de la bergamota con un corazón de vetiver y un fondo amaderado profundo. Perfecta para el hombre que vive descubriendo nuevos horizontes."
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "Explorer Platinum",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Explorer Platinum 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 1390,
+    "description": "Explorer Platinum es una fragancia fresca y vibrante, donde notas verdes y amaderadas se combinan con un fondo mineral elegante. Ideal para el hombre moderno que busca aventura con sofisticación."
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Explorer Ultra Blue",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Explorer Ultra Blue 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2190,
+    "pricePromo": 1150,
+    "description": "Explorer Ultra Blue es una fragancia fresca y luminosa, que fusiona notas marinas y cítricas sobre un fondo elegante de maderas. Perfecta para el hombre que vibra con la libertad del mar y la aventura."
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "Forever Wanted Elixir",
     "brand": "Azzaro",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/FOREVER WANTED ELIXIR 100ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 42,
-    "name": "Gentleman",
-    "brand": "Givenchy",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Gentleman 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3390,
+    "pricePromo": 2150,
+    "description": "Fragancia intensa, elegante y muy seductora. Tiene un toque dulce frutal con fondo de cuero que la hace oler cara y poderosa."
   },
   {
     "id": 43,
@@ -385,350 +469,428 @@ const perfumes = [
     "brand": "Givenchy",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Gentleman 100ml edt.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Gentleman 100ml edp.jpg",
+    "priceOriginal": 2900,
+    "pricePromo": 1990,
+    "description": "Gentleman EDP es una fragancia intensa y sofisticada, donde la nobleza del iris se mezcla con la calidez de la vainilla y la profundidad de las maderas. Ideal para el hombre elegante y carismático."
   },
   {
     "id": 44,
+    "name": "Gentleman",
+    "brand": "Givenchy",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Gentleman 100ml edt.jpg",
+    "priceOriginal": 2400,
+    "pricePromo": 1790,
+    "description": "Gentleman EDT es una fragancia fresca y elegante, que combina la energía de las especias con la suavidad del iris y la profundidad de las maderas. Perfecta para el hombre moderno que equilibra fuerza y sensibilidad."
+  },
+  {
+    "id": 45,
     "name": "Gentleman Reserve Privée",
     "brand": "Givenchy",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Gentleman Reserve Privée 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2490,
+    "description": "Réserve Privée es una fragancia refinada y atemporal, que despliega notas de maderas nobles y un sutil toque ambarino, evocando lujo discreto y sofisticación. Perfecta para el hombre que valora la elegancia sin artificios."
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Gentleman Society Extreme",
     "brand": "Givenchy",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Gentleman Society Extreme 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3690,
+    "pricePromo": 2790,
+    "description": "Gentleman Society Extreme es una fragancia poderosa y sofisticada, donde el fulgor de las especias se une a la calidez ambarina y a un sutil acorde de maderas profundas. Perfecta para el hombre de carácter decidido y estilo inconfundible."
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Herrera",
     "brand": "Carolina Herrera",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/HERRERA 100ML EDT.webp",
-    "description": ""
-  },
-  {
-    "id": 47,
-    "name": "Halloween Hero",
-    "brand": "Jesus Del Pozo",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Halloween Hero 125ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2550,
+    "pricePromo": 1690,
+    "description": "Fragancia clásica, elegante y masculina. Combina notas frescas con un toque especiado y amaderado, ideal para uso diario o eventos formales. Proyecta seguridad, limpieza y estilo atemporal."
   },
   {
     "id": 48,
-    "name": "Halloween Man",
-    "brand": "Jesus Del Pozo",
+    "name": "Halloween Hero",
+    "brand": "Halloween",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Halloween Man 125ml edt.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Halloween Hero 125ml edt.jpg",
+    "priceOriginal": 1650,
+    "pricePromo": 1090,
+    "description": "Halloween Man Hero es una fragancia fresca y vibrante, que mezcla notas acuáticas, cítricos chispeantes y un fondo amaderado. Ideal para el hombre aventurero que vive con autenticidad y libertad."
   },
   {
     "id": 49,
-    "name": "Halloween Mystery",
-    "brand": "Jesus Del Pozo",
+    "name": "Halloween Man",
+    "brand": "Halloween",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Halloween Mystery 125ml edp.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Halloween Man 125ml edt.webp",
+    "priceOriginal": 1650,
+    "pricePromo": 990,
+    "description": "Halloween Man EDT es una fragancia atrevida y seductora, donde notas frescas y especiadas se mezclan con un fondo cálido de vainilla y ámbar. Ideal para el hombre que no teme destacar."
   },
   {
     "id": 50,
-    "name": "Halloween Rock On",
-    "brand": "Jesus Del Pozo",
+    "name": "Halloween Mystery",
+    "brand": "Halloween",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Halloween Rock On 125ml edt.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Halloween Mystery 125ml edp.webp",
+    "priceOriginal": 2075,
+    "pricePromo": 1090,
+    "description": "Halloween Man Mystery es una fragancia intrigante y elegante, que combina frescura especiada con un fondo cálido y envolvente. Ideal para el hombre que seduce con su misterio y autenticidad."
   },
   {
     "id": 51,
-    "name": "Halloween X",
-    "brand": "Jesus Del Pozo",
+    "name": "Halloween Rock On",
+    "brand": "Halloween",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Halloween X 125ml edt.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Halloween Rock On 125ml edt.webp",
+    "priceOriginal": 1650,
+    "pricePromo": 1090,
+    "description": "Halloween Man Rock On es una fragancia enérgica y rebelde, que fusiona cítricos vibrantes con especias y un fondo amaderado cálido. Perfecta para el hombre que vive con pasión y actitud única."
   },
   {
     "id": 52,
+    "name": "Halloween X",
+    "brand": "Halloween",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Halloween X 125ml edt.webp",
+    "priceOriginal": 1650,
+    "pricePromo": 1190,
+    "description": "Halloween Man X es una fragancia intensa y adictiva, que combina la energía del café con la calidez de la vainilla y las maderas. Perfecta para el hombre urbano y enigmático."
+  },
+  {
+    "id": 53,
     "name": "Invictus",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Invictus 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1790,
+    "description": "Invictus EDT es una fragancia fresca y vibrante, que combina notas marinas, cítricos energéticos y un fondo amaderado sensual. Ideal para el hombre que conquista con fuerza y dinamismo."
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "Invictus Parfum",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Invictus Parfum 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3210,
+    "pricePromo": 2390,
+    "description": "Invictus Parfum es una fragancia intensa y sofisticada, que fusiona frescura marina con acordes amaderados y un fondo ambarado poderoso. Ideal para el hombre que domina cada desafío con elegancia."
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Invictus Platinum",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Invictus Platinum 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2440,
+    "pricePromo": 2390,
+    "description": "Invictus Platinum es una fragancia fresca y vibrante, que combina menta energizante y lavanda aromática sobre un fondo amaderado intenso. Ideal para el hombre que avanza con determinación y espíritu indomable."
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Invictus Victory",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Invictus Victory 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2740,
+    "pricePromo": 2190,
+    "description": "Invictus Victory es una fragancia audaz y energética, que combina notas cítricas vibrantes con un corazón de lavanda y un fondo cálido de vainilla y ambar. Perfecta para el hombre que busca la victoria con elegancia y fuerza."
   },
   {
-    "id": 56,
+    "id": 57,
     "name": "Invictus Victory Elixir",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Invictus Victory Elixir 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 57,
-    "name": "Jazz Club",
-    "brand": "Emporio Armani",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/JAZZ CLUB 100ML EDT.jpg",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2290,
+    "description": "Invictus Victory Elixir es una fragancia intensa y poderosa, que mezcla notas especiadas, vainilla cremosa y maderas profundas. Ideal para el hombre que busca dejar una huella imborrable con su presencia."
   },
   {
     "id": 58,
-    "name": "K",
-    "brand": "Dolce & Gabbana",
+    "name": "Jazz Club",
+    "brand": "Maison Margiela",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/K 100ml edp.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/JAZZ CLUB 100ML EDT.jpg",
+    "priceOriginal": 4500,
+    "pricePromo": 2290,
+    "description": "Fragancia cálida, elegante y envolvente con un toque sofisticado. Combina notas de ron, vainilla y tabaco, creando un aroma dulce, boozy y muy masculino. Ideal para noches, clima fresco y ocasiones especiales donde quieres proyectar seguridad y estilo."
   },
   {
     "id": 59,
     "name": "K",
-    "brand": "Dolce & Gabbana",
+    "brand": "Dolce Gabbana",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/K 100ml edt.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/K 100ml edp.webp",
+    "priceOriginal": 2790,
+    "pricePromo": 1790,
+    "description": "K EDP es una fragancia intensa y sofisticada, donde las notas cítricas se combinan con toques especiados y un fondo profundo de maderas y cuero. Ideal para el hombre que lidera con fuerza y elegancia."
   },
   {
     "id": 60,
+    "name": "K",
+    "brand": "Dolce Gabbana",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/K 100ml edt.webp",
+    "priceOriginal": 2540,
+    "pricePromo": 1690,
+    "description": "K es una fragancia fresca y carismática, que mezcla cítricos vibrantes, especias aromáticas y un fondo cálido de maderas. Perfecta para el hombre que lidera con pasión y naturalidad."
+  },
+  {
+    "id": 61,
     "name": "Le Male Elixir Absolu",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/LE MALE ELIXIR ABSOLU 100ML PARFUM.jpg",
-    "description": ""
+    "priceOriginal": 3835,
+    "pricePromo": 2690,
+    "description": "Fragancia intensa, cálida y sumamente seductora. Combina notas dulces de vainilla con toques especiados y amaderados, creando un aroma envolvente y elegante. Ideal para noches, clima frío y ocasiones donde quieres destacar con una presencia fuerte y adictiva."
   },
   {
-    "id": 61,
+    "id": 62,
     "name": "Lacoste Blanc",
     "brand": "Lacoste",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Lacoste Blanc 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2590,
+    "pricePromo": 1450,
+    "description": "Lacoste Blanc EDT es una fragancia fresca y elegante, donde la vivacidad de la toronja y las especias suaves se combinan con un fondo limpio de maderas y cuero. Ideal para el hombre que transmite autenticidad y sofisticación casual."
   },
   {
-    "id": 62,
+    "id": 63,
     "name": "Le Beau",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Le Beau 125ml edt.webp",
-    "description": ""
+    "priceOriginal": 3190,
+    "pricePromo": 2090,
+    "description": "Le Beau EDT es una fragancia fresca y seductora, que combina la vivacidad del coco con la frescura de la bergamota y un fondo amaderado sensual. Perfecta para el hombre que irradia libertad y atracción natural."
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Le Beau Le Parfum",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Le Beau Le Parfum 125ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3790,
+    "pricePromo": 2850,
+    "description": "Le Beau Le Parfum es una fragancia intensa y seductora, que mezcla la frescura del coco y la piña con un fondo profundo de maderas ambaradas. Perfecta para el hombre audaz que conquista con naturalidad y elegancia."
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Le Beau Paradise Garden",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Le Beau Paradise Garden 125ml edp.webp",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2590,
+    "description": "Le Beau Paradise Garden es una fragancia fresca y exótica, donde la luminosidad de la bergamota se mezcla con el dulzor del coco y un fondo elegante de maderas. Ideal para el hombre que busca escapar hacia un paraíso de sofisticación y frescura."
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "Le Male Elixir",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Le Male Elixir 125ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3420,
+    "pricePromo": 2690,
+    "description": "Le Male Elixir es una fragancia intensa y sensual, que combina notas de menta fresca, lavanda y un fondo adictivo de vainilla ambarada. Perfecta para el hombre que busca dejar una huella inolvidable."
   },
   {
-    "id": 66,
+    "id": 67,
     "name": "Le Male Le Parfum",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Le Male Le Parfum 125ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3690,
+    "pricePromo": 2590,
+    "description": "Le Male Le Parfum es una fragancia intensa y elegante, donde la frescura especiada se mezcla con la suavidad de la vainilla y el poder de las maderas. Ideal para el hombre sofisticado y carismático"
   },
   {
-    "id": 67,
+    "id": 68,
     "name": "Legend Blue",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Legend Blue 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 1490,
+    "description": "Legend Blue EDT es una fragancia fresca y vibrante, con chispeantes notas de bergamota y acordes marinos, un corazón aromático de lavanda y especias, y un fondo amaderado de cedro y sándalo. Ideal para el hombre que busca sofisticación y dinamismo."
   },
   {
-    "id": 68,
+    "id": 69,
     "name": "Legend Red",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Legend Red 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1350,
+    "description": "Legend Red EDP es una fragancia seductora y vibrante, que abre con chispeantes notas de toronja y limón, evoluciona hacia un corazón cálido de vainilla y especias, y culmina en un fondo profundo de cedro y ámbar. Perfecta para el hombre apasionado que deja huella."
   },
   {
-    "id": 69,
+    "id": 70,
     "name": "Legend Spirit",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Legend Spirit 100ml edt.webp",
-    "description": ""
-  },
-  {
-    "id": 70,
-    "name": "Light Blue Intense",
-    "brand": "Dolce & Gabbana",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Light Blue Intense 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2750,
+    "pricePromo": 1190,
+    "description": "Legend Spirit EDT es una fragancia fresca y refinada que une notas cítricas y acuáticas con un fondo de maderas blancas y almizcle. Ideal para el hombre moderno que busca libertad y sofisticación."
   },
   {
     "id": 71,
+    "name": "Light Blue Intense",
+    "brand": "Dolce Gabbana",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Light Blue Intense 100ml edp.webp",
+    "priceOriginal": 2600,
+    "pricePromo": 1760,
+    "description": "Light Blue Intense es una fragancia fresca y vibrante, donde las notas acuáticas y cítricas se intensifican sobre un fondo amaderado elegante. Ideal para el hombre que busca una frescura duradera y sofisticada."
+  },
+  {
+    "id": 72,
     "name": "Myslf",
     "brand": "Yves Saint Laurent",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Myslf 100ml edp.png",
-    "description": ""
-  },
-  {
-    "id": 72,
-    "name": "Náutica Voyage",
-    "brand": "Nautica",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Náutica Voyage 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 3990,
+    "pricePromo": 2590,
+    "description": "Myslf es una fragancia moderna y envolvente, que combina notas frescas de jengibre y cítricos con un fondo cálido de madera y ámbar. Ideal para el hombre que se define por su autenticidad y confianza."
   },
   {
     "id": 73,
+    "name": "Náutica Voyage",
+    "brand": "Montblanc",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Náutica Voyage 100ml edt.jpg",
+    "priceOriginal": 1320,
+    "pricePromo": 590,
+    "description": "Nautica Voyage es una fragancia fresca y acuática, que combina notas verdes y frutales con un fondo suave de maderas y almizcle. Perfecta para el hombre que busca frescura, libertad y aventura."
+  },
+  {
+    "id": 74,
     "name": "One Million",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/One Million 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2450,
+    "pricePromo": 1790,
+    "description": "One Million EDT es una fragancia audaz y seductora, que combina notas especiadas, cítricas y un fondo cálido de cuero y ámbar. Ideal para el hombre que disfruta del lujo y la provocación."
   },
   {
-    "id": 74,
+    "id": 75,
     "name": "One Million Elixir",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/One Million Elixir 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3250,
+    "pricePromo": 2390,
+    "description": "One Million Elixir es una fragancia intensa y opulenta, donde se combinan notas de manzana, rosa damascena y maderas ambaradas. Ideal para el hombre que busca dejar una impresión poderosa y sofisticada."
   },
   {
-    "id": 75,
+    "id": 76,
     "name": "One Million Gold",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/One Million Gold 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3250,
+    "pricePromo": 2190,
+    "description": "One Million Gold es una fragancia vibrante y refinada, que combina frescura especiada con un corazón aromático y un fondo cálido de maderas ambaradas. Ideal para el hombre que lidera con carisma y estilo."
   },
   {
-    "id": 76,
+    "id": 77,
     "name": "One Million Parfum",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/One Million Parfum 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2820,
+    "pricePromo": 2290,
+    "description": "One Million Parfum es una fragancia intensa y solar, que combina notas de cuero, ámbar salado y flores exóticas. Perfecta para el hombre que busca brillar con audacia y sofisticación."
   },
   {
-    "id": 77,
+    "id": 78,
     "name": "Phantom",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Phantom 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2360,
+    "pricePromo": 2090,
+    "description": "Phantom EDT es una fragancia futurista y vibrante, que mezcla la frescura de la lavanda con toques cítricos y un fondo cremoso de vainilla y maderas. Ideal para el hombre audaz que busca originalidad y energía."
   },
   {
-    "id": 78,
+    "id": 79,
     "name": "Phantom Intense",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Phantom Intense 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 2190,
+    "description": "Phantom Intense es una fragancia poderosa y vibrante, que fusiona frescura aromática con acordes especiados y un fondo ambarado intenso. Ideal para el hombre que destaca con energía y sofisticación."
   },
   {
-    "id": 79,
+    "id": 80,
     "name": "Phantom Parfum",
     "brand": "Paco Rabanne",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Phantom Parfum 100ml.webp",
-    "description": ""
+    "priceOriginal": 3200,
+    "pricePromo": 2290,
+    "description": "Phantom Parfum es una fragancia intensa y magnética, donde la lavanda se vuelve más profunda y sensual, combinándose con acordes ambarados y maderas oscuras. Perfecta para el hombre que conquista con confianza y misterio."
   },
   {
-    "id": 80,
+    "id": 81,
     "name": "Polo 67",
     "brand": "Ralph Lauren",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Polo 67 125ml edt.jpeg",
-    "description": ""
-  },
-  {
-    "id": 81,
-    "name": "Sauvage",
-    "brand": "Dior",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Sauvage 100ml Parfum.jpeg",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 1790,
+    "description": "Polo 67 EDT es una fragancia fresca y elegante, que combina notas cítricas con acentos aromáticos y un fondo limpio de maderas. Ideal para el hombre clásico que refleja espíritu deportivo y sofisticación."
   },
   {
     "id": 82,
@@ -736,8 +898,10 @@ const perfumes = [
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Sauvage 100ml edp.webp",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Sauvage 100ml Parfum.jpeg",
+    "priceOriginal": 4200,
+    "pricePromo": 3190,
+    "description": "Sauvage Parfum es una fragancia profunda y sofisticada, donde la frescura cítrica se mezcla con la riqueza del sándalo y la vainilla. Perfecta para el hombre que busca una elegancia intensa y natural."
   },
   {
     "id": 83,
@@ -745,206 +909,252 @@ const perfumes = [
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Sauvage 100ml edt.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Sauvage 100ml edp.webp",
+    "priceOriginal": 3490,
+    "pricePromo": 2990,
+    "description": "Sauvage EDP es una fragancia intensa y refinada, que combina la frescura vibrante de la bergamota con la calidez envolvente de la vainilla y las maderas. Ideal para el hombre elegante y libre."
   },
   {
     "id": 84,
+    "name": "Sauvage",
+    "brand": "Dior",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Sauvage 100ml edt.jpg",
+    "priceOriginal": 2990,
+    "pricePromo": 2690,
+    "description": "Sauvage EDT es una fragancia fresca y poderosa, con notas vibrantes de bergamota y un fondo amaderado que transmite fuerza y libertad. Perfecta para el hombre audaz y auténtico."
+  },
+  {
+    "id": 85,
     "name": "Sauvage Elixir",
     "brand": "Dior",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Sauvage Elixir 60ml.jpg",
-    "description": ""
+    "priceOriginal": 4690,
+    "pricePromo": 3390,
+    "description": "Sauvage Elixir es una fragancia intensa y magnética, donde las especias vibrantes se fusionan con un corazón aromático y un fondo profundo de maderas. Creada para el hombre que impone presencia con elegancia y carácter."
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Scandal",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Scandal 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2805,
+    "pricePromo": 2090,
+    "description": "Scandal EDT es una fragancia fresca y adictiva, que combina la energía de los cítricos con un corazón dulce de caramelo y un fondo elegante de vetiver. Perfecta para el hombre que disfruta destacar con estilo y carisma."
   },
   {
-    "id": 86,
+    "id": 87,
     "name": "Scandal Absolu",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Scandal Absolu 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3625,
+    "pricePromo": 2590,
+    "description": "Scandal Absolu es una fragancia intensa y envolvente, que combina la dulzura adictiva del caramelo con notas especiadas y un fondo profundo de maderas. Perfecta para el hombre que deja una impresión poderosa y sofisticada."
   },
   {
-    "id": 87,
+    "id": 88,
     "name": "Scandal Le Parfum",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Scandal Le Parfum 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 88,
-    "name": "Spicebomb",
-    "brand": "Viktor & Rolf",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Spicebomb 90ml edt.jpg",
-    "description": ""
+    "priceOriginal": 3590,
+    "pricePromo": 2290,
+    "description": "Scandal Le Parfum es una fragancia intensa y seductora, donde la frescura especiada se mezcla con un corazón dulce y un fondo cálido de maderas ambaradas. Ideal para el hombre que conquista con osadía y elegancia."
   },
   {
     "id": 89,
-    "name": "Spicebomb Extreme",
-    "brand": "Viktor & Rolf",
+    "name": "Spicebomb",
+    "brand": "Viktor&Rolf",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Spicebomb Extreme 90ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Spicebomb 90ml edt.jpg",
+    "priceOriginal": 3480,
+    "pricePromo": 2090,
+    "description": "Spicebomb EDT es una explosión de frescura especiada, con notas de pimienta, canela y un fondo cálido de tabaco y cuero. Ideal para el hombre que busca intensidad, carácter y seducción."
   },
   {
     "id": 90,
-    "name": "Spicebomb Infrared",
-    "brand": "Viktor & Rolf",
+    "name": "Spicebomb Extreme",
+    "brand": "Viktor&Rolf",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Spicebomb Infrared 90ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Spicebomb Extreme 90ml edp.jpg",
+    "priceOriginal": 3800,
+    "pricePromo": 2390,
+    "description": "Spicebomb Extreme es una fragancia intensa y envolvente, que combina especias cálidas, lavanda y un fondo profundo de tabaco y vainilla. Ideal para el hombre que quiere dejar una huella poderosa y magnética."
   },
   {
     "id": 91,
     "name": "Spicebomb Infrared",
-    "brand": "Viktor & Rolf",
+    "brand": "Viktor&Rolf",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Spicebomb Infrared 90ml edt.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Spicebomb Infrared 90ml edp.jpg",
+    "priceOriginal": 4100,
+    "pricePromo": 2590,
+    "description": "Spicebomb Infrared EDP es una fragancia intensa y magnética, donde las especias candentes se combinan con una base profunda de cuero y maderas. Ideal para el hombre que quiere dejar una impresión audaz y apasionada."
   },
   {
     "id": 92,
-    "name": "Spicebomb Night Vision",
-    "brand": "Viktor & Rolf",
+    "name": "Spicebomb Infrared",
+    "brand": "Viktor&Rolf",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Spicebomb Night Vision 90ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Spicebomb Infrared 90ml edt.jpg",
+    "priceOriginal": 3700,
+    "pricePromo": 2190,
+    "description": "Spicebomb Infrared EDT es una fragancia ardiente y adictiva, que combina especias picantes, canela y un fondo cálido de resinas y maderas. Perfecta para el hombre que busca encender cada momento con intensidad."
   },
   {
     "id": 93,
+    "name": "Spicebomb Night Vision",
+    "brand": "Viktor&Rolf",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Spicebomb Night Vision 90ml edp.jpg",
+    "priceOriginal": 5100,
+    "pricePromo": 2390,
+    "description": "Spicebomb Night Vision EDP es una fragancia intensa y sofisticada, que mezcla notas verdes, especias sensuales y un fondo amaderado oscuro. Ideal para el hombre que domina la noche con misterio y confianza."
+  },
+  {
+    "id": 94,
     "name": "Starwalker",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Starwalker 75ml edt.webp",
-    "description": ""
+    "priceOriginal": 1820,
+    "pricePromo": 850,
+    "description": "Starwalker EDT es una fragancia fresca y sofisticada, que abre con notas cítricas y acuáticas, evoluciona hacia un corazón ligero de cedro y bambú, y se asienta sobre un fondo suave de sándalo y almizcle. Perfecta para el hombre moderno que busca estilo y versatilidad."
   },
   {
-    "id": 94,
+    "id": 95,
     "name": "Starwalker Extreme",
     "brand": "Montblanc",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Starwalker Extreme 75ml edt.jpg",
-    "description": ""
-  },
-  {
-    "id": 95,
-    "name": "Stronger With You",
-    "brand": "Emporio Armani",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Stronger With You 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 1390,
+    "pricePromo": 1190,
+    "description": "Starwalker Extreme es una fragancia vibrante y moderna, que combina cítricos frescos, acordes marinos y un fondo cálido de maderas y tonka. Ideal para el hombre dinámico que irradia confianza."
   },
   {
     "id": 96,
-    "name": "Stronger With You Absolutely",
-    "brand": "Emporio Armani",
+    "name": "Stronger With You",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Stronger With You Absolutely 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Stronger With You 100ml edt.jpg",
+    "priceOriginal": 2915,
+    "pricePromo": 1990,
+    "description": "Stronger With You EDT es una fragancia moderna y vibrante que combina la chispa especiada del jengibre y la cardamomo con un fondo cálido de vainilla y maderas. Ideal para el hombre que celebra la conexión auténtica con un toque de sofisticación."
   },
   {
     "id": 97,
-    "name": "Stronger With You Intensely",
-    "brand": "Emporio Armani",
+    "name": "Stronger With You Absolutely",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Stronger With You Intensely 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Stronger With You Absolutely 100ml edp.jpg",
+    "priceOriginal": 3300,
+    "pricePromo": 2490,
+    "description": "Stronger With You Absolutely es una fragancia vibrante y sofisticada, donde la frescura de la mandarina se mezcla con el intenso acorde de café y un cálido abrazo de vainilla. Ideal para el hombre que busca un aroma audaz y lleno de carácter."
   },
   {
     "id": 98,
-    "name": "Stronger With You Parfum",
-    "brand": "Emporio Armani",
+    "name": "Stronger With You Intensely",
+    "brand": "Armani",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Stronger With You Parfum 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Stronger With You Intensely 100ml edp.jpg",
+    "priceOriginal": 2990,
+    "pricePromo": 2490,
+    "description": "Stronger With You Intensely EDP es una fragancia profunda y sofisticada, donde las especias chispeantes y el café tostado se funden con un fondo cálido de vainilla y maderas cremosas. Perfecta para el hombre que busca intensidad y elegancia en cada momento."
   },
   {
     "id": 99,
+    "name": "Stronger With You Parfum",
+    "brand": "Armani",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Stronger With You Parfum 100ml edp.jpg",
+    "priceOriginal": 3090,
+    "pricePromo": 2790,
+    "description": "Stronger With You Parfum de Emporio Armani es una fragancia masculina intensa y cálida, con mandarina, lavanda, castaña y vainilla. Elegante, moderna y perfecta para noches frías."
+  },
+  {
+    "id": 100,
     "name": "Toy 2 Pearl",
     "brand": "Moschino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/TOY 2 PEARL 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2800,
+    "pricePromo": 1390,
+    "description": "Fragancia suave, limpia y delicada. Tiene un toque floral ligero que la hace oler femenina, fresca y muy sutil."
   },
   {
-    "id": 100,
+    "id": 101,
     "name": "Toy Boy",
     "brand": "Moschino",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/TOY BOY 100ML EDP.jpg",
-    "description": ""
-  },
-  {
-    "id": 101,
-    "name": "The Dreamer",
-    "brand": "Versace",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/The Dreamer 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2590,
+    "pricePromo": 1290,
+    "description": "Fragancia elegante y atrevida con un toque moderno. Combina notas especiadas de pimienta rosa con un corazón floral de rosa, y un fondo cálido de ámbar y maderas. Ideal para destacar en eventos nocturnos y dejar una impresión sofisticada y diferente."
   },
   {
     "id": 102,
+    "name": "The Dreamer",
+    "brand": "Valentino",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/The Dreamer 100ml edt.webp",
+    "priceOriginal": 2500,
+    "pricePromo": 1090,
+    "description": "The Dreamer es una fragancia suave y enigmática, que combina lavanda, tabaco y maderas cálidas. Ideal para el hombre que vive entre la realidad y sus sueños."
+  },
+  {
+    "id": 103,
     "name": "Ultramale",
     "brand": "Jean Paul Gaultier",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Ultramale 125ml edt.webp",
-    "description": ""
+    "priceOriginal": 2995,
+    "pricePromo": 2090,
+    "description": "Ultra Male es una fragancia intensa y provocadora, donde la frescura de la pera se mezcla con especias cálidas y un fondo dulce de vainilla y ámbar. Ideal para el hombre audaz y seductor."
   },
   {
-    "id": 103,
+    "id": 104,
     "name": "Versace Eau Fraiche",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Versace Eau Fraiche 100ml edt.jpg",
-    "description": ""
+    "priceOriginal": 1950,
+    "pricePromo": 1390,
+    "description": "Versace Man Eau Fraîche es una fragancia fresca y sofisticada, que mezcla notas acuáticas, cítricos luminosos y un fondo suave de maderas claras. Perfecta para el hombre que vive con frescura, elegancia y libertad."
   },
   {
-    "id": 104,
+    "id": 105,
     "name": "Versace Pour Homme",
     "brand": "Versace",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Versace Pour Homme 100ml edt.webp",
-    "description": ""
-  },
-  {
-    "id": 105,
-    "name": "Y",
-    "brand": "Yves Saint Laurent",
-    "gender": "Hombre",
-    "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Y 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2150,
+    "pricePromo": 1390,
+    "description": "Versace Pour Homme es una fragancia fresca y elegante, que combina cítricos mediterráneos, notas florales aromáticas y un fondo amaderado vibrante. Ideal para el hombre que proyecta confianza y sofisticación natural."
   },
   {
     "id": 106,
@@ -952,1357 +1162,1681 @@ const perfumes = [
     "brand": "Yves Saint Laurent",
     "gender": "Hombre",
     "category": "Disenador",
-    "image": "assets/Hombre/Disenador/Y 100ml edt.jpg",
-    "description": ""
+    "image": "assets/Hombre/Disenador/Y 100ml edp.jpg",
+    "priceOriginal": 3995,
+    "pricePromo": 2590,
+    "description": "Y EDP es una fragancia fresca y profunda, que combina notas de manzana, salvia aromática y un fondo amaderado intenso. Ideal para el hombre que sigue su pasión con fuerza y autenticidad."
   },
   {
     "id": 107,
+    "name": "Y",
+    "brand": "Yves Saint Laurent",
+    "gender": "Hombre",
+    "category": "Disenador",
+    "image": "assets/Hombre/Disenador/Y 100ml edt.jpg",
+    "priceOriginal": 3490,
+    "pricePromo": 2290,
+    "description": "Y EDT es una fragancia fresca y luminosa, que mezcla notas cítricas, geranio y maderas suaves. Perfecta para el hombre creativo que avanza con energía y determinación."
+  },
+  {
+    "id": 108,
     "name": "Y Intense",
     "brand": "Yves Saint Laurent",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Y Intense 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3890,
+    "pricePromo": 2590,
+    "description": "Y Intense es una fragancia poderosa y vibrante, que mezcla lavanda, ciprés y pachulí sobre un fondo amaderado profundo. Perfecta para el hombre que vive con pasión y determinación."
   },
   {
-    "id": 108,
+    "id": 109,
     "name": "Y Le Parfum",
     "brand": "Yves Saint Laurent",
     "gender": "Hombre",
     "category": "Disenador",
     "image": "assets/Hombre/Disenador/Y Le Parfum 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 4100,
+    "pricePromo": 2590,
+    "description": "Y Le Parfum es una fragancia intensa y elegante, que combina frescura aromática con un fondo profundo de maderas oscuras y ámbar. Ideal para el hombre decidido que marca su propio camino."
   },
   {
-    "id": 109,
+    "id": 110,
     "name": "9pm Elixir",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/9PM ELIXIR 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 990,
+    "pricePromo": 1050,
+    "description": "Fragancia intensa, especiada y muy elegante. Es la versión más madura del 9PM original: menos dulce juvenil y más oscura y sofisticada."
   },
   {
-    "id": 110,
+    "id": 111,
     "name": "9am Dive",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/9am dive 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 840,
+    "pricePromo": 900,
+    "description": "9AM Dive de Afnan es una fragancia fresca y vibrante, con acordes acuáticos y cítricos que transmiten energía, dinamismo y sofisticación desde la primera impresión."
   },
   {
-    "id": 111,
+    "id": 112,
     "name": "9pm",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/9pm 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 800,
+    "pricePromo": 850,
+    "description": "9PM de Afnan es una fragancia moderna y adictiva, que combina notas dulces y especiadas con un fondo cálido y seductor. Ideal para acompañarte en las noches más memorables."
   },
   {
-    "id": 112,
+    "id": 113,
     "name": "9pm Rebel",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/9pm rebel 100ml edp.jpeg",
-    "description": ""
-  },
-  {
-    "id": 113,
-    "name": "Aether Extrait",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/AETHER EXTRAIT 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1300,
+    "pricePromo": 1190,
+    "description": "9PM Rebel de Afnan es una fragancia intensa y atrevida, donde las notas especiadas y dulces se fusionan en un aroma vibrante, moderno y lleno de carácter."
   },
   {
     "id": 114,
-    "name": "Aoud",
-    "brand": null,
+    "name": "Aether Extrait",
+    "brand": "French Avenue",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/AOUD 100ML EDP.webp",
-    "description": ""
+    "image": "assets/Hombre/Arabes/AETHER EXTRAIT 100ML EDP.webp",
+    "priceOriginal": 1500,
+    "pricePromo": 1090,
+    "description": "Fragancia intensa, elegante y sofisticada. Su composición la hace oler profunda, moderna y con carácter."
   },
   {
     "id": 115,
-    "name": "Artisto",
-    "brand": null,
+    "name": "Aoud",
+    "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/ARTISTO 100ML EDP.webp",
-    "description": ""
+    "image": "assets/Hombre/Arabes/AOUD 100ML EDP.webp",
+    "priceOriginal": 1990,
+    "pricePromo": 1090,
+    "description": "Fragancia profunda, elegante y sofisticada. El oud resalta con un fondo amaderado que la hace oler seria, lujosa y con mucha presencia."
   },
   {
     "id": 116,
+    "name": "Artisto",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/ARTISTO 100ML EDP.webp",
+    "priceOriginal": 2300,
+    "pricePromo": 1090,
+    "description": "Fragancia elegante, refinada y con dulzor sutil. Su aroma la hace oler sofisticada y con estilo."
+  },
+  {
+    "id": 117,
     "name": "Atlas",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/ATLAS 55ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 990,
+    "description": "Fragancia fresca, amaderada y limpia. Su estilo la hace oler masculina, sencilla y elegante."
   },
   {
-    "id": 117,
+    "id": 118,
     "name": "Amber Oud Aqua Dubai",
     "brand": "Al Haramain",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Amber Oud Aqua Dubai 75ml edp.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1590,
+    "description": "Aqua Dubai de Al Haramain es una fragancia unisex fresca, cítrica y frutal, con toques de bergamota, melón y piña, sobre una base suave de vainilla y almizcle. Es vibrante, moderna y perfecta para el día."
   },
   {
-    "id": 118,
+    "id": 119,
     "name": "Amber Oud Gold Edition",
     "brand": "Al Haramain",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Amber Oud Gold Edition 120ml edp.webp",
-    "description": ""
-  },
-  {
-    "id": 119,
-    "name": "Art Of Universe",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Art of Universe 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1590,
+    "description": "Gold Edition de Al Haramain es una fragancia unisex lujosa y envolvente, con notas dulces, amaderadas y especiadas. Es intensa, elegante y perfecta para ocasiones especiales o noches sofisticadas."
   },
   {
     "id": 120,
+    "name": "Art Of Universe",
+    "brand": "Lattafa",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/Art of Universe 100ml edp.webp",
+    "priceOriginal": 2350,
+    "pricePromo": 1390,
+    "description": "Art of Universe de Lattafa es una fragancia unisex fresca y elegante con toques cítricos, florales y un fondo amaderado y almizclado. Ideal para uso diario con un toque sofisticado."
+  },
+  {
+    "id": 121,
     "name": "Asad",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Asad 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1800,
+    "pricePromo": 790,
+    "description": "Asad de Lattafa es una fragancia poderosa y envolvente, donde las notas cálidas y especiadas se combinan con un fondo ambarado, proyectando fuerza, elegancia y carácter."
   },
   {
-    "id": 121,
+    "id": 122,
     "name": "Asad Bourbon",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Asad Bourbon 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2200,
+    "pricePromo": 1090,
+    "description": "Asad Bourbon de Lattafa es una fragancia intensa y sofisticada, donde las notas ambaradas, dulces y especiadas se fusionan en un aroma cálido, profundo y lleno de carácter."
   },
   {
-    "id": 122,
+    "id": 123,
     "name": "Asad Zanzibar",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Asad Zanzibar 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 123,
-    "name": "Azure",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Azure 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 890,
+    "description": "Asad Zanzibar de Lattafa es una fragancia fresca y exótica, que mezcla notas cítricas, especiadas y amaderadas para ofrecer un aroma vibrante, elegante y lleno de personalidad."
   },
   {
     "id": 124,
-    "name": "Ba Ha Mas",
-    "brand": null,
+    "name": "Azure",
+    "brand": "Jean Lowe",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/BA HA MAS 100ML EDP.jpg",
-    "description": ""
+    "image": "assets/Hombre/Arabes/Azure 100ml edp.webp",
+    "priceOriginal": 2100,
+    "pricePromo": 1190,
+    "description": "Azure de Jean Loewe es una fragancia fresca y elegante, con notas cítricas, marinas y un fondo amaderado suave. Es ideal para el día a día y climas cálidos, transmitiendo frescura y sofisticación."
   },
   {
     "id": 125,
+    "name": "Ba Ha Mas",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/BA HA MAS 100ML EDP.jpg",
+    "priceOriginal": 1500,
+    "pricePromo": 1090,
+    "description": "Fragancia tropical, fresca y relajada. Su aroma la hace oler ligera, veraniega y muy agradable."
+  },
+  {
+    "id": 126,
     "name": "Bharara King",
     "brand": "Bharara",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Bharara king 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2300,
+    "pricePromo": 1390,
+    "description": "Bharara King es una fragancia masculina intensa y lujosa, con notas frutales, amaderadas y almizcladas. Es poderosa, elegante y perfecta para destacar tanto de día como de noche."
   },
   {
-    "id": 126,
+    "id": 127,
     "name": "Club The Nuit Iconic",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Iconic 105ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1086,
+    "pricePromo": 1100,
+    "description": "Club de Nuit Iconic de Armaf es una fragancia masculina fresca, elegante y moderna. Mezcla notas cítricas, marinas y amaderadas, ofreciendo un aroma limpio, sofisticado y versátil, perfecto para el día a día o eventos formales."
   },
   {
-    "id": 127,
+    "id": 128,
     "name": "Club The Nuit Intense Man",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Intense Man 105ml.jpg",
-    "description": ""
+    "priceOriginal": 2088,
+    "pricePromo": 890,
+    "description": "Club de Nuit Intense Man de Armaf es una fragancia intensa, fresca y amaderada, con notas de limón, piña y abedul. Es elegante, varonil y muy duradera, ideal para hombres seguros y sofisticados."
   },
   {
-    "id": 128,
+    "id": 129,
     "name": "Club The Nuit Milestone",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Milestone 105ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1508,
+    "pricePromo": 1130,
+    "description": "Club de Nuit Milestone de Armaf es una fragancia unisex con un aroma acuático, frutal y elegante. Combina notas marinas, frutas frescas y maderas suaves, logrando un perfume refrescante, lujoso y perfecto para climas cálidos o uso casual elegante."
   },
   {
-    "id": 129,
+    "id": 130,
     "name": "Club The Nuit Sillage",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Sillage 105ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1508,
+    "pricePromo": 1090,
+    "description": "Club de Nuit Sillage de Armaf es una fragancia fresca y sofisticada, inspirada en aromas cítricos, florales y almizclados. Tiene una salida vibrante de bergamota y grosella negra, un corazón floral de rosa y jazmín, y un fondo cremoso de almizcle, sándalo y vainilla. Es elegante, versátil y con excelente proyección, ideal para quienes buscan dejar una estela memorable."
   },
   {
-    "id": 130,
+    "id": 131,
     "name": "Club The Nuit Untold",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Untold 105ml edp.png",
-    "description": ""
+    "priceOriginal": 1508,
+    "pricePromo": 1190,
+    "description": "Club de Nuit Untold de Armaf es una fragancia intensa, amaderada y dulce, con un toque misterioso y elegante. Destaca por sus notas de azafrán, jazmín, ámbar gris y maderas preciosas, creando un aroma lujoso, sofisticado y duradero, ideal para la noche o eventos especiales."
   },
   {
-    "id": 131,
+    "id": 132,
     "name": "Club The Nuit Urban Man Elixir",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Club The Nuit Urban Man Elixir 105ml edp.webp",
-    "description": ""
-  },
-  {
-    "id": 132,
-    "name": "Emerald",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/EMERALD 90ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 1508,
+    "pricePromo": 1190,
+    "description": "Club de Nuit Urban Man Elixir de Armaf es una fragancia moderna, intensa y seductora. Mezcla notas cítricas, especiadas y amaderadas, con lavanda, pimienta rosa, vetiver y pachulí. Es un perfume versátil y magnético, ideal para hombres que buscan destacar tanto de día como de noche."
   },
   {
     "id": 133,
-    "name": "Full House",
-    "brand": "Lattafa",
+    "name": "Emerald",
+    "brand": "Jo Milano",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/FULL HOUSE 100ML EDP.webp",
-    "description": ""
+    "image": "assets/Hombre/Arabes/EMERALD 90ML EDP.jpg",
+    "priceOriginal": 3000,
+    "pricePromo": 1890,
+    "description": "Fragancia elegante, dulce y profunda. Su fondo la hace oler lujosa, refinada y muy sofisticada."
   },
   {
     "id": 134,
+    "name": "Full House",
+    "brand": "Jo Milano",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/FULL HOUSE 100ML EDP.webp",
+    "priceOriginal": 2700,
+    "pricePromo": 1890,
+    "description": "Fragancia dulce, intensa y moderna. Su aroma la hace oler llamativa, juvenil y con presencia."
+  },
+  {
+    "id": 135,
     "name": "Fakhar Black",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Fakhar black 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 135,
-    "name": "Go Mango",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/GO MANGO 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2200,
+    "pricePromo": 790,
+    "description": "Fakhar Black es una fragancia moderna y magnética, que mezcla notas dulces, especiadas y amaderadas para crear un aroma intenso, elegante y lleno de personalidad."
   },
   {
     "id": 136,
+    "name": "Go Mango",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/GO MANGO 100ML EDP.jpg",
+    "priceOriginal": 1500,
+    "pricePromo": 1090,
+    "description": "Fragancia frutal, dulce y tropical. Su aroma la hace oler divertida, jugosa y muy veraniega."
+  },
+  {
+    "id": 137,
     "name": "Hawas Kobra",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/HAWAS KOBRA 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1290,
+    "description": "Fragancia intensa, elegante y muy seductora. Tiene un dulzor especiado con fondo oscuro que la hace oler poderosa y con carácter."
   },
   {
-    "id": 137,
+    "id": 138,
     "name": "Hawas Malibú",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/HAWAS MALIBÚ 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1290,
+    "description": "Fragancia tropical, fresca y muy atractiva. Tiene un dulzor frutal con fondo cremoso que la hace oler veraniega, relajada y fácil de gustar."
   },
   {
-    "id": 138,
+    "id": 139,
     "name": "Hawas Tropical",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/HAWAS TROPICAL 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1390,
+    "description": "Fragancia jugosa, alegre y vibrante. Su mezcla de frutas dulces la hace oler divertida, juvenil y con mucha vibra de playa."
   },
   {
-    "id": 139,
+    "id": 140,
     "name": "Hawas Verde",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/HAWAS VERDE 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 1999,
+    "pricePromo": 1490,
+    "description": "Fragancia fresca, limpia y elegante. Tiene un toque verde natural que la hace oler refinada, ligera y muy agradable."
   },
   {
-    "id": 140,
+    "id": 141,
     "name": "Hawas",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Hawas 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1000,
+    "pricePromo": 990,
+    "description": "Hawas for Him de Rasasi es una fragancia fresca, acuática y afrutada, con un fondo amaderado y almizclado. Es versátil, juvenil y perfecta para el día a día o climas cálidos."
   },
   {
-    "id": 141,
+    "id": 142,
     "name": "Hawas Black",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Hawas Black 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1350,
+    "description": "Hawas for Him Black de Rasasi es una fragancia intensa y elegante, con notas especiadas, amaderadas y toques dulces. Es ideal para climas fríos y ocasiones nocturnas."
   },
   {
-    "id": 142,
+    "id": 143,
     "name": "Hawas Elixir",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Hawas Elixir 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2300,
+    "pricePromo": 1390,
+    "description": "Hawas Elixir de Rasasi es una fragancia intensa y sofisticada, con notas frutales, especiadas y un fondo cálido de maderas y ámbar. Ideal para quienes buscan un aroma seductor y duradero."
   },
   {
-    "id": 143,
+    "id": 144,
     "name": "Hawas Fire",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Hawas Fire 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1490,
+    "description": "Hawas Fire de Rasasi es una fragancia cálida y vibrante, con notas especiadas, ambarinas y un fondo dulce. Perfecta para destacar en noches frescas y ocasiones especiales."
   },
   {
-    "id": 144,
+    "id": 145,
     "name": "Hawas Ice",
     "brand": "Rasasi",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Hawas ice 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1190,
+    "description": "Hawas Ice de Rasasi es una fragancia masculina fresca, cítrica y especiada, con un fondo amaderado. Es vibrante, moderna y perfecta para quienes buscan un aroma limpio y energizante."
   },
   {
-    "id": 145,
+    "id": 146,
     "name": "His Confession",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/His Confession 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2650,
+    "pricePromo": 1240,
+    "description": "His Confession es una fragancia masculina fresca, especiada y elegante, con notas cítricas, especias suaves y un fondo amaderado. Es versátil y perfecta para el uso diario o eventos casuales."
   },
   {
-    "id": 146,
+    "id": 147,
     "name": "Honor & Glory",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Honor & Glory 100ml edp.webp",
-    "description": ""
-  },
-  {
-    "id": 147,
-    "name": "Immortal",
-    "brand": "Lattafa",
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Immortal 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 990,
+    "description": "Honor & Glory es una fragancia intensa y sofisticada, que combina notas especiadas, dulces y amaderadas para crear un aroma poderoso, elegante y lleno de carácter."
   },
   {
     "id": 148,
-    "name": "Jean Loewe Vibe",
-    "brand": null,
+    "name": "Immortal",
+    "brand": "Jean Lowe",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Jean Loewe Vibe 100ml edp.webp",
-    "description": ""
+    "image": "assets/Hombre/Arabes/Immortal 100ml edp.jpg",
+    "priceOriginal": 2100,
+    "pricePromo": 1090,
+    "description": "Inmortal de Jean Loewe es una fragancia masculina intensa y elegante, con notas amaderadas, especiadas y un fondo cálido y seductor. Ideal para hombres seguros que buscan un aroma sofisticado y duradero."
   },
   {
     "id": 149,
+    "name": "Jean Loewe Vibe",
+    "brand": "Jean Lowe",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/Jean Loewe Vibe 100ml edp.webp",
+    "priceOriginal": 1600,
+    "pricePromo": 1190,
+    "description": "Jean Lowe Vibe de Maison Alhambra es una fragancia unisex fresca y frutal con cítricos, menta, albahaca y un fondo dulce de higo y dátiles. Perfecta para días cálidos y estilo relajado."
+  },
+  {
+    "id": 150,
     "name": "Khamrah",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Khamrah 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 890,
+    "description": "Khamrah es una fragancia cálida y adictiva, donde las notas especiadas, dulces y amaderadas se fusionan en un aroma profundo, envolvente y lleno de elegancia."
   },
   {
-    "id": 150,
+    "id": 151,
+    "name": "Khamrah Qahwah",
+    "brand": "Lattafa",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/Khamrah Qahwah 100ml edp.webp",
+    "priceOriginal": 940,
+    "pricePromo": 890,
+    "description": "Khamrah Qahwah es una fragancia intensa y seductora, que combina acordes de café especiado con un fondo dulce y ambarado, creando un aroma cálido, envolvente y sofisticado."
+  },
+  {
+    "id": 152,
     "name": "Khamrah Waha",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Khamrah Waha 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 151,
-    "name": "Liquid Brun",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/LIQUID BRUN 100ML EDP.jpg",
-    "description": ""
-  },
-  {
-    "id": 152,
-    "name": "Mandarín Sky Elixir",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/MANDARÍN SKY ELIXIR 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1870,
+    "pricePromo": 1190,
+    "description": "Khamrah Waha es una fragancia cálida, dulce y envolvente que combina notas especiadas, frutas jugosas y maderas cremosas. Su aroma es elegante, adictivo y con excelente presencia, ideal para quienes buscan un perfume llamativo, sofisticado y perfecto para noches o clima fresco."
   },
   {
     "id": 153,
-    "name": "Marshmallow",
-    "brand": "Lattafa",
+    "name": "Liquid Brun",
+    "brand": "French Avenue",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/MARSHMALLOW 100ML EDP.jpg",
-    "description": ""
+    "image": "assets/Hombre/Arabes/LIQUID BRUN 100ML EDP.jpg",
+    "priceOriginal": 2100,
+    "pricePromo": 1290,
+    "description": "Fragancia cálida, dulce y elegante. Su fondo la hace oler sofisticada, envolvente y muy atractiva."
   },
   {
     "id": 154,
+    "name": "Mandarín Sky Elixir",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/MANDARÍN SKY ELIXIR 100ML EDP.webp",
+    "priceOriginal": 2200,
+    "pricePromo": 1090,
+    "description": "Fragancia cítrica, dulce y brillante. Su aroma la hace oler fresca, alegre y energética."
+  },
+  {
+    "id": 155,
+    "name": "Marshmallow",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/MARSHMALLOW 100ML EDP.jpg",
+    "priceOriginal": 1800,
+    "pricePromo": 1090,
+    "description": "Fragancia dulce, suave y esponjosa. Su aroma la hace oler tierna, juvenil y muy gourmand."
+  },
+  {
+    "id": 156,
     "name": "Nebras",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/NEBRAS 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2000,
+    "pricePromo": 1130,
+    "description": "Fragancia dulce, cálida y adictiva. Su estilo gourmand la hace oler deliciosa, intensa y muy envolvente."
   },
   {
-    "id": 155,
+    "id": 157,
     "name": "Nitro Red",
-    "brand": null,
+    "brand": "Dumont",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Nitro Red 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 950,
+    "description": "Nitro Red de Dumont es una fragancia masculina vibrante y fresca, con notas cítricas, amaderadas y especiadas. Es energética, juvenil y perfecta para el uso diario."
   },
   {
-    "id": 156,
+    "id": 158,
     "name": "Odyssey Aqua",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Aqua 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1500,
+    "pricePromo": 1090,
+    "description": "Odyssey Aqua de Armaf es una fragancia fresca y revitalizante, con notas cítricas de pomelo y naranja, un toque herbáceo de menta y lavanda, y un fondo amaderado de ciprés y pachulí. Es perfecta para el día a día y climas cálidos."
   },
   {
-    "id": 157,
+    "id": 159,
     "name": "Odyssey Dubai Chocolat",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Dubai Chocolat 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2400,
+    "pricePromo": 1090,
+    "description": "Odyssey Dubai Chocolate de Armaf es una fragancia unisex gourmand con notas dulces de café, chocolate, vainilla y praliné, complementadas por especias como cardamomo y haba tonka. Es cálida, envolvente y sofisticada, perfecta para quienes disfrutan de aromas dulces y deliciosos."
   },
   {
-    "id": 158,
+    "id": 160,
     "name": "Odyssey Homme",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Homme 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1700,
+    "pricePromo": 1190,
+    "description": "Odyssey Homme de Armaf es una fragancia masculina amaderada y especiada, con notas de mandarina, cardamomo, rosa, sándalo y vainilla. Es sofisticada y cálida, ideal para ocasiones especiales o eventos nocturnos."
   },
   {
-    "id": 159,
+    "id": 161,
     "name": "Odyssey Limoni Fresh",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Limoni Fresh 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2250,
+    "pricePromo": 1090,
+    "description": "Odyssey Limoni Fresh de Armaf es una fragancia unisex fresca y cítrica, con notas de limón, mandarina y bergamota, complementadas por jengibre y flor de azahar. Es refrescante, energética y perfecta para climas cálidos o el uso diario."
   },
   {
-    "id": 160,
+    "id": 162,
     "name": "Odyssey Mandarín Sky",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Mandarín Sky 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1700,
+    "pricePromo": 1090,
+    "description": "Mandarin Sky de Armaf es una fragancia fresca, frutal y vibrante. Se abre con notas chispeantes de mandarina, bergamota y frutas tropicales, acompañadas de un corazón floral suave y un fondo cálido de almizcle y ámbar. Es ideal para climas cálidos y para quienes buscan un aroma alegre y enérgico."
   },
   {
-    "id": 161,
+    "id": 163,
     "name": "Odyssey Mega",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Mega 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1700,
+    "pricePromo": 1090,
+    "description": "Odyssey Mega de Armaf es una fragancia intensa, fresca y especiada. Combina notas vibrantes de cítricos y especias con un fondo amaderado y almizclado, logrando un aroma poderoso, moderno y masculino, ideal para destacar en cualquier ocasión."
   },
   {
-    "id": 162,
+    "id": 164,
     "name": "Odyssey Spectra",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Odyssey Spectra 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1200,
+    "pricePromo": 1090,
+    "description": "Odyssey Spectra de Armaf es una fragancia unisex de la familia oriental especiada, lanzada en 2024. Combina notas especiadas de canela, manzana y bergamota con un corazón floral de lavanda, lirio de los valles y flor de azahar del naranjo. Su base cálida incluye tabaco, haba tonka, vainilla, ámbar y pachulí, creando una estela envolvente y sofisticada. Ideal para noches frescas y ocasiones especiales."
   },
   {
-    "id": 163,
+    "id": 165,
     "name": "Oud For Glory",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Oud For Glory 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 990,
+    "description": "Oud for Glory es una fragancia opulenta y envolvente, que fusiona la riqueza del oud con toques especiados y ambarados, creando un aroma poderoso, místico y sofisticado."
   },
   {
-    "id": 164,
+    "id": 166,
     "name": "Qaed Al Fursan",
     "brand": "Lattafa",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Qaed Al Fursan 90ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 165,
-    "name": "Revolution",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/REVOLUTION 100ML EDP.jpg",
-    "description": ""
-  },
-  {
-    "id": 166,
-    "name": "Rayhaan Elixir",
-    "brand": "Lattafa",
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Rayhaan Elixir 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1200,
+    "pricePromo": 799,
+    "description": "Qaed Al Fursan es una fragancia audaz y envolvente, que combina notas frutales, amaderadas y orientales para crear un aroma vibrante, exótico y lleno de carácter."
   },
   {
     "id": 167,
-    "name": "Stallion 53",
-    "brand": null,
+    "name": "Revolution",
+    "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/STALLION 53 100ML EDP.webp",
-    "description": ""
+    "image": "assets/Hombre/Arabes/REVOLUTION 100ML EDP.jpg",
+    "priceOriginal": 1500,
+    "pricePromo": 1090,
+    "description": "Fragancia moderna, dulce y con carácter. Su estilo la hace oler atractiva, versátil y actual."
   },
   {
     "id": 168,
-    "name": "Toffe Coffee",
-    "brand": "Lattafa",
+    "name": "Rayhaan Elixir",
+    "brand": "Rayhaan",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/TOFFE COFFEE 100ML EDP.jpg",
-    "description": ""
+    "image": "assets/Hombre/Arabes/Rayhaan Elixir 100ml edp.jpg",
+    "priceOriginal": 1900,
+    "pricePromo": 1090,
+    "description": "Rayhaan Elixir de Rayhaan Perfumes es una fragancia intensa y opulenta, con notas dulces, amaderadas y especiadas. Es un perfume elegante y duradero, ideal para ocasiones especiales o para quienes buscan dejar una impresión memorable."
   },
   {
     "id": 169,
+    "name": "Stallion 53",
+    "brand": "Emper",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/STALLION 53 100ML EDP.webp",
+    "priceOriginal": 2200,
+    "pricePromo": 890,
+    "description": "Fragancia intensa, amaderada y masculina. Su fondo la hace oler fuerte, elegante y dominante."
+  },
+  {
+    "id": 170,
+    "name": "Toffe Coffee",
+    "brand": "Armaf",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/TOFFE COFFEE 100ML EDP.jpg",
+    "priceOriginal": 1430,
+    "pricePromo": 1130,
+    "description": "Fragancia dulce, cálida y deliciosa. Su mezcla la hace oler a café y caramelo, muy gourmand y envolvente."
+  },
+  {
+    "id": 171,
     "name": "Turathi Electric",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/TURATHI ELECTRIC 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1300,
+    "pricePromo": 990,
+    "description": "Fragancia fresca, vibrante y moderna. Su toque cítrico la hace oler limpia, juvenil y dinámica."
   },
   {
-    "id": 170,
+    "id": 172,
     "name": "Tyrant",
-    "brand": null,
+    "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/TYRANT 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 1700,
+    "pricePromo": 1090,
+    "description": "Fragancia intensa, oscura y dominante. Combina especias con dulzor cálido que la hace oler fuerte, masculina y muy imponente."
   },
   {
-    "id": 171,
+    "id": 173,
     "name": "Tag Uomo Rosso",
     "brand": "Armaf",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Tag Uomo Rosso 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1500,
+    "pricePromo": 890,
+    "description": "Tag Uomo Rosso de Armaf es una fragancia masculina fresca, amaderada y especiada, con toques cítricos y un fondo cálido de ámbar y almizcle. Es vibrante, juvenil y perfecta para el uso diario."
   },
   {
-    "id": 172,
+    "id": 174,
     "name": "Turathi Blue",
     "brand": "Afnan",
     "gender": "Hombre",
     "category": "Arabes",
     "image": "assets/Hombre/Arabes/Turathi blue 90ml edp.png",
-    "description": ""
-  },
-  {
-    "id": 173,
-    "name": "Veneno",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/VENENO 100ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 174,
-    "name": "Vulcan Feu",
-    "brand": null,
-    "gender": "Hombre",
-    "category": "Arabes",
-    "image": "assets/Hombre/Arabes/VULCAN FEU 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 890,
+    "description": "Turathi Blue de Afnan es una fragancia fresca y sofisticada, que combina acordes cítricos, marinos y amaderados para crear un aroma vibrante, elegante y lleno de energía."
   },
   {
     "id": 175,
-    "name": "Vintage Radio",
-    "brand": null,
+    "name": "Veneno",
+    "brand": "French Avenue",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/Vintage Radio 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Hombre/Arabes/VENENO 100ML EDP.webp",
+    "priceOriginal": 2100,
+    "pricePromo": 1290,
+    "description": "Fragancia intensa, dulce y oscura. Su fondo la hace oler seductora, fuerte y con mucha personalidad."
   },
   {
     "id": 176,
-    "name": "Wildcard",
-    "brand": null,
+    "name": "Vulcan Feu",
+    "brand": "French Avenue",
     "gender": "Hombre",
     "category": "Arabes",
-    "image": "assets/Hombre/Arabes/WILDCARD 100ML EDP.jpg",
-    "description": ""
+    "image": "assets/Hombre/Arabes/VULCAN FEU 100ML EDP.jpg",
+    "priceOriginal": 2200,
+    "pricePromo": 1290,
+    "description": "Fragancia cálida, amaderada y potente. Su mezcla de especias la hace oler elegante, intensa y masculina."
   },
   {
     "id": 177,
+    "name": "Vintage Radio",
+    "brand": "Lattafa",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/Vintage Radio 100ml edp.jpg",
+    "priceOriginal": 2500,
+    "pricePromo": 1190,
+    "description": "Vintage Radio de Lattafa es una fragancia vibrante y envolvente, que combina notas frescas, especiadas y amaderadas, evocando un estilo clásico con un toque moderno y lleno de personalidad."
+  },
+  {
+    "id": 178,
+    "name": "Wildcard",
+    "brand": "Jo Milano",
+    "gender": "Hombre",
+    "category": "Arabes",
+    "image": "assets/Hombre/Arabes/WILDCARD 100ML EDP.jpg",
+    "priceOriginal": 2500,
+    "pricePromo": 1890,
+    "description": "Fragancia equilibrada, versátil y moderna. Su mezcla la hace oler adaptable, atractiva y fácil de usar."
+  },
+  {
+    "id": 179,
     "name": "Erba Pura",
     "brand": "Xerjoff",
     "gender": "Hombre",
     "category": "Nicho",
     "image": "assets/Hombre/Nicho/Erba Pura 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 6600,
+    "pricePromo": 5500,
+    "description": "Erba Pura de Xerjoff es una fragancia vibrante y sofisticada, que envuelve los sentidos con una mezcla deliciosa de frutas exóticas y almizcles cálidos. Un perfume elegante, fresco y adictivo, perfecto para quienes buscan dejar una impresión inolvidable."
   },
   {
-    "id": 178,
+    "id": 180,
     "name": "Layton",
-    "brand": "Parfums De Marly",
+    "brand": "Parfums de Marly",
     "gender": "Hombre",
     "category": "Nicho",
     "image": "assets/Hombre/Nicho/Layton 125ml edp.jpg",
-    "description": ""
+    "priceOriginal": 10500,
+    "pricePromo": 6400,
+    "description": "Layton es una fragancia magnética y sofisticada, donde la frescura aromática se encuentra con una base cálida y especiada. Un aroma distintivo, elegante y profundamente seductor."
   },
   {
-    "id": 179,
+    "id": 181,
     "name": "212 Héroes Dama",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/212 Héroes Dama 80ml edp.webp",
-    "description": ""
+    "priceOriginal": 3220,
+    "pricePromo": 2090,
+    "description": "212 Heroes Forever Young de Carolina Herrera es una fragancia femenina floral y frutal, con notas de frambuesa, mandarina, jazmín y sándalo. Es vibrante, juvenil y perfecta para el uso diario."
   },
   {
-    "id": 180,
+    "id": 182,
     "name": "212 Vip Rose",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/212 Vip Rose 80ml edp.webp",
-    "description": ""
+    "priceOriginal": 2900,
+    "pricePromo": 1890,
+    "description": "212 VIP Rosé de Carolina Herrera es una fragancia femenina floral y afrutada, con notas de champán rosado, flor de duraznero y almizcle blanco. Es elegante, chispeante y perfecta para eventos sociales o salidas nocturnas."
   },
   {
-    "id": 181,
+    "id": 183,
     "name": "Alíen Mugler",
     "brand": "Mugler",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/ALÍEN MUGLER 90ML EDP.webp",
-    "description": ""
+    "priceOriginal": 2900,
+    "pricePromo": 1690,
+    "description": "Fragancia intensa, dulce y muy seductora. Su fondo ambarado la hace oler poderosa, llamativa y con mucha personalidad."
   },
   {
-    "id": 182,
+    "id": 184,
     "name": "Amo Ferragamo",
-    "brand": "Salvatore Ferragamo",
+    "brand": "Ferragamo",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/AMO FERRAGAMO 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 3150,
+    "pricePromo": 1590,
+    "description": "Fragancia dulce, cremosa y femenina. Su toque frutal la hace oler coqueta, elegante y muy atractiva."
   },
   {
-    "id": 183,
+    "id": 185,
     "name": "Amor Amor",
     "brand": "Cacharel",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/AMOR AMOR 100ML EDT.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 930,
+    "description": "Fragancia dulce, frutal y romántica. Su aroma la hace oler juvenil, coqueta y fácil de amar."
   },
   {
-    "id": 184,
+    "id": 186,
     "name": "Be Delicious",
     "brand": "DKNY",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/BE DELICIOUS 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 2300,
+    "pricePromo": 1190,
+    "description": "Fragancia fresca, frutal y jugosa. Su aroma la hace oler limpia, juvenil y muy natural."
   },
   {
-    "id": 185,
+    "id": 187,
     "name": "Bella Vita",
-    "brand": null,
+    "brand": "Guess",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/BELLA VITA 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1600,
+    "pricePromo": 1090,
+    "description": "Fragancia dulce, elegante y femenina. Su estilo la hace oler sofisticada, clásica y muy atractiva."
   },
   {
-    "id": 186,
+    "id": 188,
     "name": "Black Opium",
     "brand": "Yves Saint Laurent",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Black Opium 90ml edp.jpg",
-    "description": ""
+    "priceOriginal": 4060,
+    "pricePromo": 2550,
+    "description": "Black Opium es un perfume dulce e intenso con café, vainilla y flores blancas. Seductor y perfecto para la noche."
   },
   {
-    "id": 187,
+    "id": 189,
     "name": "Bright Crystal",
     "brand": "Versace",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Bright Crystal 90ml edt.jpg",
-    "description": ""
+    "priceOriginal": 2900,
+    "pricePromo": 1590,
+    "description": "Versace Bright Crystal es un perfume fresco y floral con yuzu, peonía y almizcle. Femenino, suave y perfecto para el día."
   },
   {
-    "id": 188,
+    "id": 190,
     "name": "Bright Crystal Absolu",
     "brand": "Versace",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Bright Crystal Absolu 90ml edp.png",
-    "description": ""
+    "priceOriginal": 2490,
+    "pricePromo": 1690,
+    "description": "Bright Crystal Absolu es una versión más intensa y duradera, con frambuesa, peonía y ámbar. Femenina, vibrante y elegante."
   },
   {
-    "id": 189,
+    "id": 191,
     "name": "Burberry Goddess",
     "brand": "Burberry",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Burberry Goddess 100ml edp.avif",
-    "description": ""
+    "priceOriginal": 3800,
+    "pricePromo": 3090,
+    "description": "Burberry Goddess es una fragancia femenina gourmand y aromática, centrada en una rica trilogía de vainillas y lavanda. Es cálida, elegante y perfecta para climas frescos o noches especiales."
   },
   {
-    "id": 190,
+    "id": 192,
     "name": "Burberry Her",
     "brand": "Burberry",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Burberry Her 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3650,
+    "pricePromo": 2390,
+    "description": "Burberry Her es una fragancia femenina dulce y afrutada, con notas de fresa, frambuesa, jazmín y vainilla. Moderna, vibrante y perfecta para el uso diario."
   },
   {
-    "id": 191,
+    "id": 193,
     "name": "Ch",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/CH 100ml edt.webp",
-    "description": ""
+    "priceOriginal": 2550,
+    "pricePromo": 1690,
+    "description": "CH Eau de Toilette 100 ml de Carolina Herrera es una fragancia femenina floral oriental, con notas cítricas, florales y un fondo dulce y amaderado. Elegante y versátil, ideal para el día a día o eventos especiales."
   },
   {
-    "id": 192,
+    "id": 194,
     "name": "Cheap & Chic I Love Love",
     "brand": "Moschino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/CHEAP & CHIC I LOVE LOVE 100ML EDT.jpg",
-    "description": ""
+    "priceOriginal": 2600,
+    "pricePromo": 1390,
+    "description": "Fragancia cítrica, fresca y alegre. Su aroma la hace oler juvenil, energética y muy viva."
   },
   {
-    "id": 193,
+    "id": 195,
     "name": "Dkny Women",
     "brand": "DKNY",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/DKNY WOMEN 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1398,
+    "pricePromo": 1590,
+    "description": "Fragancia fresca, cítrica y moderna. Tiene un toque urbano que la hace oler ligera, energética y casual."
   },
   {
-    "id": 194,
+    "id": 196,
     "name": "Daisy",
     "brand": "Marc Jacobs",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Daisy 100ml edt.png",
-    "description": ""
-  },
-  {
-    "id": 195,
-    "name": "Devotion",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/Devotion 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 196,
-    "name": "Devotion Intense",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/Devotion Intense 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2990,
+    "pricePromo": 1990,
+    "description": "Daisy de Marc Jacobs es una fragancia floral fresca con notas de fresa, violeta y jazmín. Es ligera, juvenil y perfecta para primavera o uso diario."
   },
   {
     "id": 197,
+    "name": "Devotion",
+    "brand": "Dolce Gabbana",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/Devotion 100ml edp.jpg",
+    "priceOriginal": 3100,
+    "pricePromo": 1790,
+    "description": "Devotion de Dolce & Gabbana es una fragancia gourmand con notas de limón confitado, flor de azahar y vainilla. Es dulce, cálida y femenina, ideal para otoño e invierno."
+  },
+  {
+    "id": 198,
+    "name": "Devotion Intense",
+    "brand": "Dolce Gabbana",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/Devotion Intense 100ml edp.jpg",
+    "priceOriginal": 3950,
+    "pricePromo": 2090,
+    "description": "Devotion Intense de Dolce & Gabbana es una fragancia gourmand cálida con avellana tostada, flor de azahar y vainilla. Es más profunda y envolvente que la versión original, ideal para noches frías."
+  },
+  {
+    "id": 199,
     "name": "Donna Born In Roma",
     "brand": "Valentino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Donna Born In Roma 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 4020,
+    "pricePromo": 2790,
+    "description": "Donna Born in Roma de Valentino es un perfume femenino floral oriental, con jazmín, vainilla bourbon y madera. Es elegante, juvenil y con un toque rebelde."
   },
   {
-    "id": 198,
+    "id": 200,
     "name": "Donna Born In Roma Coral Fantasy",
     "brand": "Valentino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Donna Born In Roma Coral Fantasy 100ml edp.avif",
-    "description": ""
+    "priceOriginal": 4050,
+    "pricePromo": 2790,
+    "description": "Un perfume frutal y floral con kiwi y rosa, ideal para días soleados. Fresco, moderno y femenino."
   },
   {
-    "id": 199,
+    "id": 201,
     "name": "Donna Born In Roma Intense",
     "brand": "Valentino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Donna Born In Roma Intense 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 4162,
+    "pricePromo": 3090,
+    "description": "Perfume cálido y elegante con vainilla, jazmín y ámbar. Intenso, sensual y perfecto para la noche."
   },
   {
-    "id": 200,
+    "id": 202,
     "name": "Funny!",
     "brand": "Moschino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/FUNNY! 100ML EDT.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1090,
+    "description": "Fragancia fresca, ligera y alegre. Sus notas cítricas la hacen oler limpia, simple y muy fácil de usar."
   },
   {
-    "id": 201,
+    "id": 203,
     "name": "Good Girl",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Good Girl 80ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3050,
+    "pricePromo": 2090,
+    "description": "Good Girl de Carolina Herrera es un perfume femenino, sensual y elegante. Tiene una mezcla de notas dulces y cálidas: almendra, jazmín sambac, haba tonka, cacao y café. Su frasco en forma de tacón alto representa poder y feminidad"
   },
   {
-    "id": 202,
+    "id": 204,
     "name": "Good Girl Blush",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Good Girl Blush 80ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3890,
+    "pricePromo": 2390,
+    "description": "Good Girl Blush es una fragancia floral y fresca con notas de bergamota, rosa y vainilla. Es más suave y romántica que la original. Ideal para primavera y verano."
   },
   {
-    "id": 203,
+    "id": 205,
     "name": "Good Girl Blush Elixir",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Good Girl Blush Elixir 80ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 204,
-    "name": "Halloween Magic",
-    "brand": "Jesus Del Pozo",
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/HALLOWEEN MAGIC 100ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 205,
-    "name": "Loveme The Silver",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/LOVEME THE SILVER 90ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 3720,
+    "pricePromo": 2650,
+    "description": "Good Girl Blush Elixir es una versión más intensa y sensual de Blush, con rosa, vainilla y pachulí. Ideal para la noche o clima frío."
   },
   {
     "id": 206,
-    "name": "La Nuit Trésor",
-    "brand": "Lancôme",
+    "name": "Halloween Magic",
+    "brand": "Halloween",
     "gender": "Mujer",
     "category": "Disenador",
-    "image": "assets/Mujer/Disenador/La Nuit Trésor 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Mujer/Disenador/HALLOWEEN MAGIC 100ML EDP.webp",
+    "priceOriginal": 1700,
+    "pricePromo": 1490,
+    "description": "Fragancia dulce, juvenil y con misterio. Tiene un toque envolvente que la hace oler divertida y atractiva."
   },
   {
     "id": 207,
-    "name": "La Vie Est Belle",
-    "brand": "Lancôme",
+    "name": "Loveme The Silver",
+    "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
-    "image": "assets/Mujer/Disenador/La Vie Est Belle 100ml edp.jpg",
-    "description": ""
+    "image": "assets/Mujer/Disenador/LOVEME THE SILVER 90ML EDP.jpg",
+    "priceOriginal": 2650,
+    "pricePromo": 1490,
+    "description": "Fragancia floral, elegante y moderna. Su dulzor equilibrado la hace oler sofisticada, femenina y muy fina."
   },
   {
     "id": 208,
+    "name": "La Nuit Trésor",
+    "brand": "Lancome",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/La Nuit Trésor 100ml edp.jpg",
+    "priceOriginal": 5100,
+    "pricePromo": 2190,
+    "description": "La Nuit Trésor de Lancôme es una fragancia oriental gourmand, dulce y sensual. Combina rosa negra, orquídea de vainilla, praliné y lichi, con un fondo de incienso y papiro. Ideal para noches frías y ocasiones especiales."
+  },
+  {
+    "id": 209,
+    "name": "La Vie Est Belle",
+    "brand": "Lancome",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/La Vie Est Belle 100ml edp.jpg",
+    "priceOriginal": 3300,
+    "pricePromo": 2190,
+    "description": "La Vie Est Belle de Lancôme es una fragancia floral gourmand con notas de iris, jazmín, flor de azahar, vainilla y pachulí. Es dulce, elegante y femenina, ideal para otoño e invierno."
+  },
+  {
+    "id": 210,
     "name": "Libre",
     "brand": "Yves Saint Laurent",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Libre 90ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3490,
+    "pricePromo": 2650,
+    "description": "YSL Libre es un perfume floral con lavanda, flor de azahar y vainilla. Elegante, moderno y versátil."
   },
   {
-    "id": 209,
+    "id": 211,
     "name": "Libre Intense",
     "brand": "Yves Saint Laurent",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Libre Intense 90ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 210,
-    "name": "Light Blue Dama",
-    "brand": "Dolce & Gabbana",
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/Light Blue Dama 100ml edt.webp",
-    "description": ""
-  },
-  {
-    "id": 211,
-    "name": "Light Blue Intense Dama",
-    "brand": "Dolce & Gabbana",
-    "gender": "Mujer",
-    "category": "Disenador",
-    "image": "assets/Mujer/Disenador/Light Blue Intense Dama 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 4200,
+    "pricePromo": 2790,
+    "description": "YSL Libre Intense es una fragancia femenina lanzada en 2020, creada por los perfumistas Anne Flipo y Carlos Benaïm. Es una interpretación más profunda y cálida del original YSL Libre, destacando por su sensualidad y elegancia."
   },
   {
     "id": 212,
+    "name": "Light Blue Dama",
+    "brand": "Dolce Gabbana",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/Light Blue Dama 100ml edt.webp",
+    "priceOriginal": 3650,
+    "pricePromo": 1490,
+    "description": "Light Blue EDT de Dolce & Gabbana es una fragancia fresca y afrutada con notas de limón siciliano, manzana verde y jazmín. Es ligera, ideal para el verano y el uso diario."
+  },
+  {
+    "id": 213,
+    "name": "Light Blue Intense Dama",
+    "brand": "Dolce Gabbana",
+    "gender": "Mujer",
+    "category": "Disenador",
+    "image": "assets/Mujer/Disenador/Light Blue Intense Dama 100ml edp.webp",
+    "priceOriginal": 2950,
+    "pricePromo": 1790,
+    "description": "Light Blue Eau Intense de Dolce & Gabbana es una versión más intensa y duradera del clásico, con notas de limón siciliano, manzana verde, jazmín y almizcle. Ideal para verano, es fresca, elegante y tiene buena duración."
+  },
+  {
+    "id": 214,
     "name": "Miss Dior",
     "brand": "Dior",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Miss Dior 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 4290,
+    "pricePromo": 3090,
+    "description": "Miss Dior es una fragancia floral y afrutada que combina rosa centifolia, peonía, iris, albaricoque y vainilla. Es elegante, romántica y versátil, ideal para uso diario."
   },
   {
-    "id": 213,
+    "id": 215,
     "name": "Mon Guerlain",
     "brand": "Guerlain",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Mon Guerlain 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 3800,
+    "pricePromo": 2190,
+    "description": "Mon Guerlain es una fragancia floral oriental que combina lavanda, jazmín sambac, vainilla de Tahití y sándalo australiano. Lanzada en 2017, representa una feminidad fuerte y sensual. Su aroma es dulce, elegante y reconfortante, ideal para climas frescos o uso diario."
   },
   {
-    "id": 214,
+    "id": 216,
     "name": "Perfect",
-    "brand": null,
+    "brand": "Marc Jacobs",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Perfect 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3650,
+    "pricePromo": 2090,
+    "description": "Perfect de Marc Jacobs es una fragancia floral fresca y cremosa con notas de ruibarbo, narciso, almendra y leche de cashmere. Es alegre, suave y juvenil, ideal para uso diario."
   },
   {
-    "id": 215,
+    "id": 217,
     "name": "Prada Paradoxe",
     "brand": "Prada",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Prada Paradoxe 90ml edp.avif",
-    "description": ""
+    "priceOriginal": 4290,
+    "pricePromo": 2690,
+    "description": "Prada Paradoxe es un perfume femenino floral ambarado, con notas de neroli, jazmín, vainilla y almizcle. Es suave, moderno y elegante, ideal para uso diario."
   },
   {
-    "id": 216,
+    "id": 218,
     "name": "Signature",
-    "brand": null,
+    "brand": "Montblanc",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/SIGNATURE 100ml EDP.webp",
-    "description": ""
+    "priceOriginal": 2690,
+    "pricePromo": 1190,
+    "description": "Fragancia cálida, dulce y elegante. Tiene un toque cremoso que la hace oler cómoda, refinada y muy versátil."
   },
   {
-    "id": 217,
+    "id": 219,
     "name": "Toy 2",
     "brand": "Moschino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/TOY 2 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2800,
+    "pricePromo": 1390,
+    "description": "Fragancia limpia, fresca y minimalista. Su aroma jabonoso la hace oler pulcra, ligera y muy agradable."
   },
   {
-    "id": 218,
+    "id": 220,
     "name": "Toy 2 Bubble Gum",
     "brand": "Moschino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/TOY 2 BUBBLE GUM 100ML EDT.jpg",
-    "description": ""
+    "priceOriginal": 2450,
+    "pricePromo": 1490,
+    "description": "Fragancia dulce, divertida y juvenil. Su aroma tipo chicle la hace oler juguetona, llamativa y diferente."
   },
   {
-    "id": 219,
+    "id": 221,
     "name": "Toy 2 Pearl",
     "brand": "Moschino",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/TOY 2 PEARL 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2800,
+    "pricePromo": 1390,
+    "description": "Fragancia suave, limpia y delicada. Tiene un toque floral ligero que la hace oler femenina, fresca y muy sutil."
   },
   {
-    "id": 220,
+    "id": 222,
     "name": "The Only One",
-    "brand": null,
+    "brand": "Dolce Gabbana",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/The Only One 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2940,
+    "pricePromo": 1990,
+    "description": "The Only One de Dolce & Gabbana es una fragancia dulce y elegante con violeta, café, vainilla e iris. Ideal para la noche o clima fresco."
   },
   {
-    "id": 221,
+    "id": 223,
     "name": "Very Good Girl",
     "brand": "Carolina Herrera",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Very Good Girl 80ml edp.jpg",
-    "description": ""
+    "priceOriginal": 3360,
+    "pricePromo": 2390,
+    "description": "Very Good Girl de Carolina Herrera es una versión más frutal y chispeante que el original. Abre con grosella roja y lichi, tiene un corazón de rosa y un fondo cálido de vainilla y vetiver. Es más dulce, juguetona y juvenil."
   },
   {
-    "id": 222,
+    "id": 224,
     "name": "Yellow Diamond",
     "brand": "Versace",
     "gender": "Mujer",
     "category": "Disenador",
     "image": "assets/Mujer/Disenador/Yellow Diamond 90ml edt.png",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1590,
+    "description": "Versace Yellow Diamond es una fragancia fresca y floral, con notas de cítricos, flor de azahar y madera de ámbar. Ideal para el día."
   },
   {
-    "id": 223,
+    "id": 225,
     "name": "Ari",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Ari 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1190,
+    "description": "Ari de Ariana Grande es una fragancia dulce, frutal y femenina, con notas de frambuesa, malvavisco y flores suaves. Ideal para el uso diario."
   },
   {
-    "id": 224,
+    "id": 226,
     "name": "Cloud",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Cloud 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1590,
+    "description": "Cloud de Ariana Grande es una fragancia femenina dulce y envolvente, con notas de lavanda, pera, coco y praliné. Es cálida, reconfortante y perfecta para el uso diario o climas frescos."
   },
   {
-    "id": 225,
+    "id": 227,
     "name": "Cloud 2.0",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Cloud 2.0 100ml edp.png",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1590,
+    "description": "Cloud 2.0 Intense de Ariana Grande es una fragancia femenina dulce y envolvente, con notas de lavanda, pera, coco y praliné. Es cálida, reconfortante y perfecta para el uso diario o climas frescos."
   },
   {
-    "id": 226,
+    "id": 228,
     "name": "Cloud Pink",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Cloud Pink 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1690,
+    "description": "Cloud Pink de Ariana Grande es una fragancia femenina dulce y afrutada, con notas de pitahaya, piña, orquídea de vainilla y praliné. Es suave, cremosa y perfecta para el uso diario."
   },
   {
-    "id": 227,
+    "id": 229,
     "name": "Eilish",
     "brand": "Billie Eilish",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Eilish 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1490,
+    "description": "Eilish de Billie Eilish es una fragancia dulce, ambarina y cálida, con vainilla, cacao y maderas suaves. Sensual y envolvente, perfecta para climas frescos."
   },
   {
-    "id": 228,
+    "id": 230,
     "name": "Eilish No.2",
     "brand": "Billie Eilish",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Eilish No.2 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1190,
+    "description": "Eilish No. 2 de Billie Eilish es una fragancia unisex amaderada y floral, con notas de bergamota, flor de manzano, amapola, palo santo y almizcle. Es oscura, especiada y perfecta para climas frescos."
   },
   {
-    "id": 229,
+    "id": 231,
     "name": "God Is A Woman",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/God Is A Woman 100ml edp.webp",
-    "description": ""
-  },
-  {
-    "id": 230,
-    "name": "Mod Blush",
-    "brand": "Billie Eilish",
-    "gender": "Mujer",
-    "category": "Celebridad",
-    "image": "assets/Mujer/Celebridad/Mod Blush 100ml edp.jpg",
-    "description": ""
-  },
-  {
-    "id": 231,
-    "name": "Mod Vainilla",
-    "brand": "Billie Eilish",
-    "gender": "Mujer",
-    "category": "Celebridad",
-    "image": "assets/Mujer/Celebridad/Mod Vainilla 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1420,
+    "description": "God Is a Woman de Ariana Grande es una fragancia femenina suave y natural, con notas de pera, rosa turca, vainilla de Madagascar y cedro. Es vegana, limpia y perfecta para uso diario."
   },
   {
     "id": 232,
+    "name": "Mod Blush",
+    "brand": "Ariana Grande",
+    "gender": "Mujer",
+    "category": "Celebridad",
+    "image": "assets/Mujer/Celebridad/Mod Blush 100ml edp.jpg",
+    "priceOriginal": 1990,
+    "pricePromo": 1440,
+    "description": "Mod Blush de Ariana Grande es una fragancia femenina frutal y floral, con un toque almizclado. Moderna, dulce y perfecta para el día."
+  },
+  {
+    "id": 233,
+    "name": "Mod Vainilla",
+    "brand": "Ariana Grande",
+    "gender": "Mujer",
+    "category": "Celebridad",
+    "image": "assets/Mujer/Celebridad/Mod Vainilla 100ml edp.jpg",
+    "priceOriginal": 2000,
+    "pricePromo": 1390,
+    "description": "Mod Vanilla de Ariana Grande es una fragancia dulce, cremosa y cálida, con notas de vainilla, cacao y almizcle. Ideal para climas frescos y ocasiones especiales."
+  },
+  {
+    "id": 234,
     "name": "Moonlight",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Moonlight 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1190,
+    "description": "Moonlight de Ariana Grande es una fragancia femenina dulce y envolvente, con notas de ciruela, grosella negra, malvavisco y vainilla. Ideal para un aroma suave y romántico."
   },
   {
-    "id": 233,
+    "id": 235,
     "name": "R.E.M.",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/R.E.M. 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1290,
+    "description": "R.E.M. de Ariana Grande es una fragancia femenina dulce y suave, con lavanda, caramelo salado y almizcle. Ideal para un aroma relajante y soñador."
   },
   {
-    "id": 234,
+    "id": 236,
     "name": "Sweet Like Candy",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Sweet Like Candy 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2199,
+    "pricePromo": 1090,
+    "description": "Sweet Like Candy de Ariana Grande es una fragancia femenina dulce y afrutada, con notas de zarzamora, malvavisco y vainilla. Es juvenil, divertida y perfecta para el uso diario."
   },
   {
-    "id": 235,
+    "id": 237,
     "name": "Thank U Next",
     "brand": "Ariana Grande",
     "gender": "Mujer",
     "category": "Celebridad",
     "image": "assets/Mujer/Celebridad/Thank U Next 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1390,
+    "description": "Thank U, Next de Ariana Grande es una fragancia dulce y cremosa, con notas de coco, macarrón y rosa silvestre. Femenina, atrevida y perfecta para destacar."
   },
   {
-    "id": 236,
+    "id": 238,
     "name": "Atlas",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/ATLAS 55ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 237,
-    "name": "Delilah",
-    "brand": "Lattafa",
-    "gender": "Mujer",
-    "category": "Arabes",
-    "image": "assets/Mujer/Arabes/DELILAH 100ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 238,
-    "name": "Eclaire",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Arabes",
-    "image": "assets/Mujer/Arabes/Eclaire 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 990,
+    "description": "Fragancia fresca, amaderada y limpia. Su estilo la hace oler masculina, sencilla y elegante."
   },
   {
     "id": 239,
-    "name": "Full House",
-    "brand": "Lattafa",
+    "name": "Delilah",
+    "brand": "Maison Alhambra",
     "gender": "Mujer",
     "category": "Arabes",
-    "image": "assets/Mujer/Arabes/FULL HOUSE 100ML EDP.webp",
-    "description": ""
+    "image": "assets/Mujer/Arabes/DELILAH 100ML EDP.webp",
+    "priceOriginal": 2100,
+    "pricePromo": 890,
+    "description": "Fragancia floral, dulce y elegante. Su composición la hace oler romántica, fina y muy femenina."
   },
   {
     "id": 240,
+    "name": "Eclaire",
+    "brand": "Lattafa",
+    "gender": "Mujer",
+    "category": "Arabes",
+    "image": "assets/Mujer/Arabes/Eclaire 100ml edp.webp",
+    "priceOriginal": 2200,
+    "pricePromo": 1190,
+    "description": "Lattafa Eclaire es un perfume dulce y gourmand con notas de caramelo, miel, vainilla y praliné. Ideal para noches frías."
+  },
+  {
+    "id": 241,
+    "name": "Full House",
+    "brand": "Jo Milano",
+    "gender": "Mujer",
+    "category": "Arabes",
+    "image": "assets/Mujer/Arabes/FULL HOUSE 100ML EDP.webp",
+    "priceOriginal": 2700,
+    "pricePromo": 1890,
+    "description": "Fragancia dulce, intensa y moderna. Su aroma la hace oler llamativa, juvenil y con presencia."
+  },
+  {
+    "id": 242,
     "name": "Hawas Diva",
     "brand": "Rasasi",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/HAWAS DIVA 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 1390,
+    "description": "Fragancia dulce, floral y con presencia. Su aroma la hace oler femenina, segura y muy llamativa."
   },
   {
-    "id": 241,
+    "id": 243,
     "name": "Hawas Eclat",
     "brand": "Rasasi",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/HAWAS ECLAT 100ML EDP.webp",
-    "description": ""
+    "priceOriginal": 1500,
+    "pricePromo": 1390,
+    "description": "Fragancia fresca, elegante y brillante. Su limpieza la hace oler sofisticada, ligera y muy pulida."
   },
   {
-    "id": 242,
+    "id": 244,
     "name": "Marshmallow",
-    "brand": "Lattafa",
+    "brand": "Armaf",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/MARSHMALLOW 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 1800,
+    "pricePromo": 1090,
+    "description": "Fragancia dulce, suave y esponjosa. Su aroma la hace oler tierna, juvenil y muy gourmand."
   },
   {
-    "id": 243,
+    "id": 245,
     "name": "Mayar",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Mayar 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2200,
+    "pricePromo": 840,
+    "description": "Lattafa Mayar es una fragancia femenina floral y frutal lanzada en 2022. Combina notas de frambuesa, lichi y hoja de violeta en la salida; peonía, rosa blanca y jazmín en el corazón; y una base de vainilla y almizcle. Es dulce, elegante y versátil, ideal para uso diario."
   },
   {
-    "id": 244,
+    "id": 246,
     "name": "Mayar Cherry Intense",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Mayar Cherry Intense 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 2200,
+    "pricePromo": 1090,
+    "description": "Mayar Cherry Intense es un perfume dulce y frutal con cereza, cacao y vainilla. Atractivo, cálido y envolvente."
   },
   {
-    "id": 245,
+    "id": 247,
     "name": "Mayar Natural Intense",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Mayar Natural Intense 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 890,
+    "description": "Mayar Natural Intense es un perfume fresco y frutal con higo, jazmín y vainilla. Luminoso, femenino y versátil."
   },
   {
-    "id": 246,
+    "id": 248,
     "name": "Nebras",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/NEBRAS 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2000,
+    "pricePromo": 1130,
+    "description": "Fragancia dulce, cálida y adictiva. Su estilo gourmand la hace oler deliciosa, intensa y muy envolvente."
   },
   {
-    "id": 247,
+    "id": 249,
     "name": "Noble Blush",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Noble Blush 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1900,
+    "pricePromo": 1090,
+    "description": "Noble Blush es una fragancia femenina elegante y floral, con notas de rosa, jazmín y almizcle. Refinada y suave, ideal para el día."
   },
   {
-    "id": 248,
+    "id": 250,
     "name": "Teriaq",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Teriaq 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1820,
+    "pricePromo": 1090,
+    "description": "Lattafa Teriaq es una fragancia floral oriental, dulce y envolvente, ideal para ocasiones especiales y uso nocturno."
   },
   {
-    "id": 249,
+    "id": 251,
     "name": "Teriaq Intense",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Teriaq Intense 100ml edp.webp",
-    "description": ""
-  },
-  {
-    "id": 250,
-    "name": "Veneno",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Arabes",
-    "image": "assets/Mujer/Arabes/VENENO 100ML EDP.webp",
-    "description": ""
-  },
-  {
-    "id": 251,
-    "name": "Vulcan Feu",
-    "brand": null,
-    "gender": "Mujer",
-    "category": "Arabes",
-    "image": "assets/Mujer/Arabes/VULCAN FEU 100ML EDP.jpg",
-    "description": ""
+    "priceOriginal": 2500,
+    "pricePromo": 1290,
+    "description": "Teriaq Intense es un perfume cálido y especiado con ciruela, canela y ámbar. Intenso, elegante y perfecto para la noche."
   },
   {
     "id": 252,
-    "name": "Wildcard",
-    "brand": null,
+    "name": "Veneno",
+    "brand": "French Avenue",
     "gender": "Mujer",
     "category": "Arabes",
-    "image": "assets/Mujer/Arabes/WILDCARD 100ML EDP.jpg",
-    "description": ""
+    "image": "assets/Mujer/Arabes/VENENO 100ML EDP.webp",
+    "priceOriginal": 2100,
+    "pricePromo": 1290,
+    "description": "Fragancia intensa, dulce y oscura. Su fondo la hace oler seductora, fuerte y con mucha personalidad."
   },
   {
     "id": 253,
+    "name": "Vulcan Feu",
+    "brand": "French Avenue",
+    "gender": "Mujer",
+    "category": "Arabes",
+    "image": "assets/Mujer/Arabes/VULCAN FEU 100ML EDP.jpg",
+    "priceOriginal": 2200,
+    "pricePromo": 1290,
+    "description": "Fragancia cálida, amaderada y potente. Su mezcla de especias la hace oler elegante, intensa y masculina."
+  },
+  {
+    "id": 254,
+    "name": "Wildcard",
+    "brand": "Jo Milano",
+    "gender": "Mujer",
+    "category": "Arabes",
+    "image": "assets/Mujer/Arabes/WILDCARD 100ML EDP.jpg",
+    "priceOriginal": 2500,
+    "pricePromo": 1890,
+    "description": "Fragancia equilibrada, versátil y moderna. Su mezcla la hace oler adaptable, atractiva y fácil de usar."
+  },
+  {
+    "id": 255,
     "name": "Yara",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Yara 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2100,
+    "pricePromo": 890,
+    "description": "Yara de Lattafa es un perfume dulce, tropical y cremoso, con vainilla, frutas y flores. Ideal para uso diario."
   },
   {
-    "id": 254,
+    "id": 256,
     "name": "Yara Candy",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Yara Candy 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 1999,
+    "pricePromo": 990,
+    "description": "Yara Candy de Lattafa es un perfume femenino dulce y frutal con notas de mandarina verde, fresa, caramelo y vainilla. Ideal para quienes aman fragancias tipo “gomitas”."
   },
   {
-    "id": 255,
+    "id": 257,
     "name": "Yara Tous",
     "brand": "Lattafa",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Yara Tous 100ml edp.webp",
-    "description": ""
+    "priceOriginal": 1200,
+    "pricePromo": 890,
+    "description": "Yara Tous de Lattafa es un perfume femenino tropical y cremoso, con notas de mango, coco, flores blancas y vainilla. Ideal para climas cálidos y uso diario."
   },
   {
-    "id": 256,
+    "id": 258,
     "name": "Yum Yum",
-    "brand": "Yves Saint Laurent",
+    "brand": "Armaf",
     "gender": "Mujer",
     "category": "Arabes",
     "image": "assets/Mujer/Arabes/Yum Yum 100ml edp.jpg",
-    "description": ""
+    "priceOriginal": 2687,
+    "pricePromo": 1590,
+    "description": "Yum Yum de Lattafa es un perfume dulce, frutal y juvenil, con notas de algodón de azúcar, frutas rojas y vainilla. Ideal para quienes aman los aromas golosos y femeninos."
   }
 ];

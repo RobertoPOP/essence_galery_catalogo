@@ -46,10 +46,33 @@
   const modalBrand = document.getElementById("modalBrand");
   const modalGender = document.getElementById("modalGender");
   const modalCategory = document.getElementById("modalCategory");
+  const modalPrice = document.getElementById("modalPrice");
   const modalDescription = document.getElementById("modalDescription");
 
   function categoryLabel(cat) {
     return CATEGORY_LABELS[cat] || cat;
+  }
+
+  const currencyFormatter = new Intl.NumberFormat("es-MX", {
+    style: "currency",
+    currency: "MXN",
+    maximumFractionDigits: 0,
+  });
+
+  function formatPrice(value) {
+    return typeof value === "number" ? currencyFormatter.format(value) : "";
+  }
+
+  function priceBlockHtml(p, { compact = false } = {}) {
+    const hasOriginal = typeof p.priceOriginal === "number";
+    const hasPromo = typeof p.pricePromo === "number";
+    if (!hasOriginal && !hasPromo) return "";
+    const wrapClass = compact ? "price-block price-block-modal" : "price-block";
+    return `
+      <div class="${wrapClass}">
+        ${hasOriginal ? `<span class="price-original">${formatPrice(p.priceOriginal)}</span>` : ""}
+        ${hasPromo ? `<span class="price-promo">${formatPrice(p.pricePromo)}</span>` : ""}
+      </div>`;
   }
 
   function escapeHtml(str) {
@@ -111,6 +134,7 @@
           </div>
           <h3 class="perfume-card-name">${escapeHtml(p.name)}</h3>
           ${brandHtml}
+          ${priceBlockHtml(p)}
           <button type="button" class="perfume-card-cta">Ver detalles</button>
         </div>
       </article>`;
@@ -186,6 +210,7 @@
     modalBrand.classList.toggle("d-none", !p.brand);
     modalGender.textContent = p.gender;
     modalCategory.textContent = categoryLabel(p.category);
+    modalPrice.innerHTML = priceBlockHtml(p, { compact: true });
     modalDescription.textContent = p.description || "Información detallada próximamente disponible.";
 
     modal.show();

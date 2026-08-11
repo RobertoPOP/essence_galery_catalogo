@@ -470,6 +470,40 @@ input:focus-visible {
   margin: 0;
 }
 
+.price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.price-original {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-muted);
+}
+
+.price-promo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.price-block-modal {
+  margin-bottom: 0.9rem;
+}
+
+.price-block-modal .price-promo {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 575.98px) {
+  .price-promo { font-size: 1.1rem; }
+  .price-original { font-size: 0.75rem; }
+}
+
 .perfume-card-cta {
   margin-top: auto;
   align-self: flex-start;

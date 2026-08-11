@@ -57,12 +57,14 @@ y visitar `http://localhost:8000`.
 
 ```js
 {
-  "id": 257,
+  "id": 259,
   "name": "Nombre del perfume",
   "brand": "Marca (opcional)",
   "gender": "Hombre",       // "Hombre" o "Mujer"
   "category": "Nicho",      // "Disenador" | "Arabes" | "Nicho" | "Celebridad"
   "image": "assets/Hombre/Nicho/archivo.jpg",
+  "priceOriginal": 2500,    // opcional, se muestra tachado
+  "pricePromo": 1800,       // opcional, precio destacado
   "description": ""         // opcional
 }
 ```
@@ -72,4 +74,10 @@ y visitar `http://localhost:8000`.
 ## Notas de diseño
 
 - La paleta de colores (`css/styles.css`, sección `:root`) se definió a partir de los tonos del logo: crema, dorado y marrón profundo.
-- Los nombres de los perfumes se generaron automáticamente a partir de los nombres de archivo en `assets/`, limpiando tamaño (ml) y concentración (EDP/EDT/EDC). La marca se asignó solo cuando se pudo inferir con confianza a partir del nombre de la línea; cuando no fue posible, se deja sin marca (no se inventa información).
+- Los nombres de los perfumes se generaron automáticamente a partir de los nombres de archivo en `assets/`, limpiando tamaño (ml) y concentración (EDP/EDT/EDC).
+- **Marca, precios y descripción** se importaron desde `assets/Catalogo_Perfumes.xlsx` (hojas "Hombre" y "Mujer"), cruzando cada fila por el nombre del perfume (columna B) contra el nombre de archivo de imagen correspondiente:
+  - `brand` ← columna A (Marca)
+  - `priceOriginal` ← columna G (Precio original, se muestra tachado)
+  - `pricePromo` ← columna F (Precio al consumidor, precio destacado)
+  - `description` ← columna K (Descripción)
+  - Si una fila del Excel no tuvo una imagen correspondiente en `assets/`, no se incluyó en el catálogo (no se inventan productos sin imagen).
