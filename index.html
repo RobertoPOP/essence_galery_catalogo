@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essence Gallery | Catálogo de Perfumes de Lujo</title>
+  <meta name="description" content="Explora el catálogo de Essence Gallery: perfumes de diseñador, árabes, nicho y celebridad para hombre y mujer. Elegancia, variedad y calidad en un solo lugar." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Essence Gallery | Catálogo de Perfumes de Lujo" />
+  <meta property="og:description" content="Descubre nuestra colección de fragancias para hombre y mujer: diseñador, árabes, nicho y celebridad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header id="mainHeader" class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand brand" href="#inicio">
+          <img src="assets/logo.png" alt="Logo Essence Gallery" class="brand-logo">
+          <span class="brand-name">Essence <em>Gallery</em></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo" data-quick-gender="Hombre">Hombre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalogo" data-quick-gender="Mujer">Mujer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-1 text-center text-lg-start hero-copy">
+          <p class="eyebrow">Perfumería selecta</p>
+          <h1 class="hero-title">El arte de <span>oler bien</span> tiene un nombre</h1>
+          <p class="hero-subtitle">Descubre una curaduría de fragancias de diseñador, árabes, nicho y celebridad. Elegancia y carácter en cada frasco.</p>
+          <a href="#catalogo" class="btn btn-cta">Explorar catálogo <i class="bi bi-arrow-down-short"></i></a>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <div class="hero-visual">
+            <div class="hero-ring"></div>
+            <img src="assets/logo.png" alt="Essence Gallery" class="hero-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section id="catalogo" class="catalog-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <p class="eyebrow">Nuestra colección</p>
+        <h2>Catálogo de Fragancias</h2>
+        <p class="section-subtitle">Filtra por género y categoría, o busca directamente el perfume que tienes en mente.</p>
+      </div>
+
+      <!-- Buscador -->
+      <div class="search-wrap">
+        <i class="bi bi-search search-icon"></i>
+        <input type="search" id="searchInput" class="form-control search-input" placeholder="Buscar por nombre, marca, categoría o género…" aria-label="Buscar perfume">
+      </div>
+
+      <!-- Filtros -->
+      <div class="filters" role="group" aria-label="Filtros de catálogo">
+        <div class="filter-group" id="genderFilters" data-filter-type="gender">
+          <button class="pill active" data-value="Hombre">Hombre</button>
+          <button class="pill" data-value="Mujer">Mujer</button>
+        </div>
+        <div class="filter-group" id="categoryFilters" data-filter-type="category">
+          <button class="pill active" data-value="Todas">Todas las categorías</button>
+        </div>
+      </div>
+
+      <div class="results-bar">
+        <span id="resultsCount" class="results-count"></span>
+        <button id="clearFiltersBtn" class="btn btn-clear"><i class="bi bi-x-circle"></i> Limpiar filtros</button>
+      </div>
+
+      <!-- Grid de perfumes -->
+      <div id="perfumeGrid" class="perfume-grid" role="list"></div>
+
+      <!-- Paginación -->
+      <nav id="pagination" class="pagination-wrap" aria-label="Paginación del catálogo"></nav>
+
+      <!-- Estado vacío -->
+      <div id="emptyState" class="empty-state d-none">
+        <i class="bi bi-flower2"></i>
+        <h3>No encontramos ese aroma</h3>
+        <p>Intenta con otro nombre, marca o ajusta los filtros seleccionados.</p>
+        <button class="btn btn-clear" id="emptyStateClearBtn">Limpiar filtros</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN INFORMATIVA ===== -->
+  <section id="nosotros" class="info-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <p class="eyebrow">Sobre nosotros</p>
+        <h2>Por qué Essence Gallery</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="bi bi-gem"></i>
+            <h3>Calidad</h3>
+            <p>Seleccionamos cada fragancia por su composición, fijación y prestigio de casa perfumista.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="bi bi-grid-3x3-gap"></i>
+            <h3>Variedad</h3>
+            <p>Diseñador, árabes, nicho y celebridad: un catálogo amplio para todos los estilos y personalidades.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="bi bi-stars"></i>
+            <h3>Selección curada</h3>
+            <p>Cada pieza de nuestra galería es escogida a mano, pensando en la experiencia olfativa completa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contacto" class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="#inicio" class="brand footer-brand">
+            <img src="assets/logo.png" alt="Logo Essence Gallery" class="brand-logo">
+            <span class="brand-name">Essence <em>Gallery</em></span>
+          </a>
+          <p class="footer-tagline">Catálogo de perfumería selecta. Explora, descubre e inspírate.</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope"></i> <a href="mailto:robertoTH_181299@hotmail.com">robertoTH_181299@hotmail.com</a></li>
+            <li><i class="bi bi-instagram"></i> <a href="https://instagram.com/essencegallery" target="_blank" rel="noopener">@essencegallery</a></li>
+          </ul>
+          <a class="btn-whatsapp" href="https://wa.me/525520823989?text=Quiero%20mas%20informacion" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+            <i class="bi bi-whatsapp"></i> Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+      <hr>
+      <p class="footer-copy">&copy; <span id="year"></span> Essence Gallery. Catálogo informativo, sin venta en línea.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/525520823989?text=Quiero%20mas%20informacion" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Enviar mensaje por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Botón scroll to top -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ===== MODAL DETALLE ===== -->
+  <div class="modal fade" id="perfumeModal" tabindex="-1" aria-labelledby="perfumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <div class="modal-body">
+          <div class="modal-image-wrap">
+            <img id="modalImage" src="" alt="" class="modal-image">
+          </div>
+          <div class="modal-info">
+            <div class="modal-badges">
+              <span id="modalGender" class="badge pill-badge"></span>
+              <span id="modalCategory" class="badge pill-badge pill-badge-outline"></span>
+            </div>
+            <h3 id="modalName" class="modal-name"></h3>
+            <p id="modalBrand" class="modal-brand"></p>
+            <p id="modalDescription" class="modal-description"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cta-outline" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="data/perfumes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
